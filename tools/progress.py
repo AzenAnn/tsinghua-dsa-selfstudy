@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
-"""统计学习进度，写进 README.md 的进度区（<!-- progress:start --> 和 <!-- progress:end --> 之间）。
+"""统计学习进度，写进 README.md 的进度区（<!-- progress:start --> 和 <!-- progress:end --> 之间），
+同时更新标题下面的进度徽章（<!-- badge:start --> 和 <!-- badge:end --> 之间）。
 
 数据来源：
   PLAN.md 里每天的复选框：一天的框全打勾才算这一天完成
@@ -11,10 +12,12 @@
 """
 import re
 import sys
+from urllib.parse import quote
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 START, END = "<!-- progress:start -->", "<!-- progress:end -->"
+BADGE_START, BADGE_END = "<!-- badge:start -->", "<!-- badge:end -->"
 
 
 def parse_plan():
@@ -27,6 +30,13 @@ def parse_plan():
             if re.match(r"\s*- \[[xX]\]", line):
                 days[-1][1] += 1
     return days
+
+
+def replace_between(text: str, start: str, end: str, block: str) -> str:
+    """把 text 里从 start 到 end（含两端标记）的部分换成 block。"""
+    pre, rest = text.split(start, 1)
+    _, post = rest.split(end, 1)
+    return pre + block + post
 
 
 def main() -> None:
@@ -61,9 +71,12 @@ def main() -> None:
     text = readme.read_text(encoding="utf-8")
     if START not in text or END not in text:
         sys.exit("README.md 里找不到进度区的标记")
-    pre, rest = text.split(START, 1)
-    _, post = rest.split(END, 1)
-    readme.write_text(pre + block + post, encoding="utf-8")
+    text = replace_between(text, START, END, block)
+    if BADGE_START in text and BADGE_END in text:
+        color = "lightgrey" if done_tasks == 0 else ("brightgreen" if done_days == len(days) else "blue")
+        url = f"https://img.shields.io/badge/{quote('进度')}-{quote(f'{done_days}/{len(days)} 天', safe='')}-{color}"
+        text = replace_between(text, BADGE_START, BADGE_END, f"{BADGE_START}\n![进度]({url})\n{BADGE_END}")
+    readme.write_text(text, encoding="utf-8")
     print(f"已更新 README.md：{done_days}/{len(days)} 天，{done_tasks}/{all_tasks} 项任务")
 
 
