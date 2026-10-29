@@ -35,7 +35,7 @@
 | 项目 | 进度 |
 |---|---|
 | 天数 | 0 / 40 |
-| 计划里的任务 | 0 / 187 |
+| 计划里的任务 | 0 / 235 |
 | 下一步 | D01 · 10-30 周五 · 搭环境 ＋ 第1章 绪论（上） |
 | OJ 题（problems/） | 0 道 |
 | 课后习题（exercises/） | 0 道 |
@@ -90,7 +90,7 @@ gantt
 | 11 串 | D31–33 | KMP、BM（坏字符 + 好后缀）、Karp-Rabin | [📝](notes/ch11-串.md) |
 | 12 排序 | D34–36 | 快速排序的各种划分、k-选取、中位数、希尔排序 | [📝](notes/ch12-排序.md) |
 
-D18、D37 是阶段复习（不看书限时重写），D38–39 做两个综合项目：用自己的 B-树写的键值库 **minikv**，用自己的 Huffman 树写的压缩工具 **huffzip**。每天的具体任务见 **[PLAN.md](PLAN.md)**。
+D18、D37 是阶段复习（不看书限时重写），D38–39 做两个综合项目：用自己的 B-树写的键值库 **minikv**，用自己的 Huffman 树写的压缩工具 **huffzip**。总览见 **[PLAN.md](PLAN.md)**，每天具体怎么做见 **[days/](days/D01/README.md)**（从 D01 开始）。
 
 ## 🔁 每天的学习循环
 
@@ -108,7 +108,7 @@ flowchart LR
 | 1.5 h | 看讲义，读教材对应的小节 |
 | 2 h | 合上书实现 → `tools/test.sh` 通过 → 和邓老师的实现对照，差异记进笔记 |
 | 1 h | 课后习题或 OJ 题 |
-| 0.5 h | 写笔记，在 PLAN.md 里打勾，`python3 tools/progress.py`，commit 并 push |
+| 0.5 h | 写笔记，在当天指南末尾的完成清单里打勾，`python3 tools/progress.py`，commit 并 push |
 
 **一章算完成**，要同时满足：
 
@@ -146,7 +146,7 @@ tools/test.sh                     # 编译并运行全部测试
 | `tools/run.sh problems/ch02/luogu-P1908-逆序对` | 编译并比对样例 |
 | `tools/duipai.sh problems/ch02/luogu-P1908-逆序对` | 和暴力解法随机对拍 |
 | `python3 tools/new.py exercise ch02 2-12` | 新建一道课后习题 |
-| `python3 tools/progress.py` | 按 PLAN.md 的打勾情况更新进度 |
+| `python3 tools/progress.py` | 按每天指南里完成清单的打勾情况更新进度 |
 | `python3 tools/deng.py list` | 列出邓老师代码包里的示例 |
 | `python3 tools/deng.py fibonacci -- 20` | 在 Linux 上编译并运行一个示例 |
 
@@ -173,8 +173,10 @@ tools/test.sh                     # 编译并运行全部测试
 
 ```text
 tsinghua-dsa-selfstudy/
-├── 📄 PLAN.md            40 天计划，每天打卡
-├── 📂 include/dsa/       自己实现的数据结构和算法（只有头文件）
+├── 📄 PLAN.md            40 天计划总览
+├── 📂 days/D01…D40/      每天的做法指南：读什么、写哪个文件、跑什么命令、怎么调试，末尾是完成清单
+├── 📂 include/dsa/       自己实现的数据结构：模板类的声明和实现、普通函数的声明
+├── 📂 src/               普通函数的实现（第1章、栈的应用、Huffman、kd-树、散列码、线性排序、串匹配）
 ├── 📂 tests/             单元测试 + 随机对拍（dsa_test.h 是自带的小测试框架）
 ├── 📂 bench/             实测耗时，和理论复杂度对照
 ├── 📂 notes/             每章笔记
@@ -188,9 +190,9 @@ tsinghua-dsa-selfstudy/
 ## 📐 约定
 
 - **区间**一律左闭右开 `[lo, hi)`，秩的类型是 `dsa::Rank`（`unsigned int`），和邓老师的代码一致，方便对照。
-- **待实现**：还没写的函数体是 `DSA_TODO();`。测试遇到它不算失败，所以 CI 一直保持绿色。
-- **测试文件**命名为 `tests/test_chNN_<名字>.cpp`，会被自动编译。每个结构都要有边界测试，以及和 `std` 的随机对拍。
-- **每章开始时**，先在 `include/dsa/` 写接口（函数体都是 `DSA_TODO();`），在 `tests/` 写测试，再逐个实现。
+- **待实现**：全书要写的每个函数都已经建好，函数体是 `DSA_TODO();`，文件里按天分段。测试遇到它不算失败，所以 CI 一直保持绿色。
+- **文件怎么分**：模板类的声明和实现都在 `include/dsa/*.h`（模板只能写在头文件里）；普通函数声明在 `include/dsa/*.h`、实现在 `src/*.cpp`。
+- **测试**：`tests/test_chNN_<名字>.cpp`，每个用例的名字以天数开头（如 `D03 expand：…`），所以 `tools/test.sh ch02 D03` 只跑第 3 天的用例。测试都先用参考实现自检过，并做过“故意改错看能否抓到”的检验。
 - **commit 信息**以天数开头，例如 `D03: Vector 构造、扩容与分摊分析`。
 
 ## 🙏 资料来源与致谢

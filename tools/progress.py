@@ -3,7 +3,7 @@
 同时更新标题下面的进度徽章（<!-- badge:start --> 和 <!-- badge:end --> 之间）。
 
 数据来源：
-  PLAN.md 里每天的复选框：一天的框全打勾才算这一天完成
+  days/DNN/README.md 末尾“完成清单”里的复选框：一天的框全打勾才算这一天完成
   problems/ 下有 sol.cpp 的题目目录数
   exercises/ 下的习题文件数
 
@@ -22,13 +22,15 @@ BADGE_START, BADGE_END = "<!-- badge:start -->", "<!-- badge:end -->"
 
 def parse_plan():
     days = []  # [(标题, 已勾数, 总数)]
-    for line in (ROOT / "PLAN.md").read_text(encoding="utf-8").splitlines():
-        if line.startswith("### D"):
-            days.append([line[4:].strip(), 0, 0])
-        elif days and re.match(r"\s*- \[[ xX]\]", line):
-            days[-1][2] += 1
-            if re.match(r"\s*- \[[xX]\]", line):
-                days[-1][1] += 1
+    for f in sorted((ROOT / "days").glob("D[0-9][0-9]/README.md")):
+        lines = f.read_text(encoding="utf-8").splitlines()
+        title = lines[0].lstrip("# ").strip() if lines else f.parent.name
+        done = total = 0
+        for line in lines:
+            if re.match(r"\s*- \[[ xX]\]", line):
+                total += 1
+                done += bool(re.match(r"\s*- \[[xX]\]", line))
+        days.append([title, done, total])
     return days
 
 

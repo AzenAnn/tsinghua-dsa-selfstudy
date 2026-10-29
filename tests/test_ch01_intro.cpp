@@ -48,7 +48,7 @@ int lcsReference(const std::string& a, const std::string& b) {
 
 // ---------------- 第 1 天 ----------------
 
-TEST("bubblesort1A：边界情况") {
+TEST("D01 bubblesort1A：边界情况") {
     int one[] = {7};
     bubblesort1A(one, 1);
     CHECK_EQ(one[0], 7);
@@ -64,7 +64,7 @@ TEST("bubblesort1A：边界情况") {
     CHECK_EQ(v, (std::vector<int>{1, 1, 2, 2, 2}));
 }
 
-TEST("bubblesort1A：和 std::sort 随机对拍") {
+TEST("D01 bubblesort1A：和 std::sort 随机对拍") {
     for (int round = 0; round < 2000; ++round) {
         auto v = randVector(randInt(0, 40), -20, 20);
         auto w = v;
@@ -74,7 +74,7 @@ TEST("bubblesort1A：和 std::sort 随机对拍") {
     }
 }
 
-TEST("countOnes：逐位检查") {
+TEST("D01 countOnes：逐位检查") {
     CHECK_EQ(countOnes(0), 0);
     CHECK_EQ(countOnes(1), 1);
     CHECK_EQ(countOnes(0xFFFFFFFFu), 32);
@@ -85,7 +85,7 @@ TEST("countOnes：逐位检查") {
     }
 }
 
-TEST("countOnes1：消去最低位的 1") {
+TEST("D01 countOnes1：消去最低位的 1") {
     CHECK_EQ(countOnes1(0), 0);
     CHECK_EQ(countOnes1(0xFFFFFFFFu), 32);
     for (int round = 0; round < 10000; ++round) {
@@ -94,15 +94,15 @@ TEST("countOnes1：消去最低位的 1") {
     }
 }
 
-TEST("power2BF：蛮力") {
+TEST("D01 power2BF：蛮力") {
     for (int n = 0; n <= 62; ++n) REQUIRE_EQ(power2BF(n), 1LL << n);
 }
 
-TEST("power2：反复平方") {
+TEST("D01 power2：反复平方") {
     for (int n = 0; n <= 62; ++n) REQUIRE_EQ(power2(n), 1LL << n);
 }
 
-TEST("sumI：迭代求和") {
+TEST("D01 sumI：迭代求和") {
     CHECK_EQ(sumI(nullptr, 0), 0LL);
     for (int round = 0; round < 1000; ++round) {
         auto v = randVector(randInt(0, 100), -1000000000, 1000000000);
@@ -112,7 +112,7 @@ TEST("sumI：迭代求和") {
 
 // ---------------- 第 2 天 ----------------
 
-TEST("sumLinear：线性递归求和") {
+TEST("D02 sumLinear：线性递归求和") {
     CHECK_EQ(sumLinear(nullptr, 0), 0LL);
     for (int round = 0; round < 1000; ++round) {
         auto v = randVector(randInt(0, 100), -1000000000, 1000000000);
@@ -120,7 +120,7 @@ TEST("sumLinear：线性递归求和") {
     }
 }
 
-TEST("sumBinary：二分递归求和") {
+TEST("D02 sumBinary：二分递归求和") {
     CHECK_EQ(sumBinary(nullptr, 0, 0), 0LL);
     for (int round = 0; round < 1000; ++round) {
         auto v = randVector(randInt(1, 100), -1000000000, 1000000000);
@@ -129,7 +129,7 @@ TEST("sumBinary：二分递归求和") {
     }
 }
 
-TEST("reverseR：递归倒置") {
+TEST("D02 reverseR：递归倒置") {
     for (int round = 0; round < 1000; ++round) {
         auto v = randVector(randInt(0, 50), 0, 99);
         int lo = (int)randInt(0, v.size()), hi = (int)randInt(lo, v.size());
@@ -140,7 +140,7 @@ TEST("reverseR：递归倒置") {
     }
 }
 
-TEST("reverseI：迭代倒置") {
+TEST("D02 reverseI：迭代倒置") {
     for (int round = 0; round < 1000; ++round) {
         auto v = randVector(randInt(0, 50), 0, 99);
         int lo = (int)randInt(0, v.size()), hi = (int)randInt(lo, v.size());
@@ -167,10 +167,10 @@ static void checkMax2(void (*f)(const int*, int, int, int&, int&)) {
         REQUIRE_EQ(v[x2], second);
     }
 }
-TEST("max2I：迭代找最大的两个") { checkMax2(max2I); }
-TEST("max2R：二分递归找最大的两个") { checkMax2(max2R); }
+TEST("D02 max2I：迭代找最大的两个") { checkMax2(max2I); }
+TEST("D02 max2R：二分递归找最大的两个") { checkMax2(max2R); }
 
-TEST("hanoi：步数为 2^n - 1 且每一步合法") {
+TEST("D02 hanoi：步数为 2^n - 1 且每一步合法") {
     for (int n = 0; n <= 12; ++n) {
         std::vector<std::pair<char, char>> moves;
         hanoi(n, 'A', 'B', 'C', moves);
@@ -179,13 +179,13 @@ TEST("hanoi：步数为 2^n - 1 且每一步合法") {
     }
 }
 
-TEST("fibR：二分递归") {
+TEST("D02 fibR：二分递归") {
     long long f[31] = {0, 1};
     for (int i = 2; i <= 30; ++i) f[i] = f[i - 1] + f[i - 2];
     for (int n = 0; n <= 30; ++n) REQUIRE_EQ(fibR(n), f[n]);
 }
 
-TEST("fibL：线性递归，同时带回前一项") {
+TEST("D02 fibL：线性递归，同时带回前一项") {
     long long f[93] = {0, 1};
     for (int i = 2; i <= 92; ++i) f[i] = f[i - 1] + f[i - 2];
     long long prev = -1;
@@ -197,13 +197,13 @@ TEST("fibL：线性递归，同时带回前一项") {
     }
 }
 
-TEST("fibI：迭代") {
+TEST("D02 fibI：迭代") {
     long long f[93] = {0, 1};
     for (int i = 2; i <= 92; ++i) f[i] = f[i - 1] + f[i - 2];
     for (int n = 0; n <= 92; ++n) REQUIRE_EQ(fibI(n), f[n]);
 }
 
-TEST("gcdEuclid：辗转相除") {
+TEST("D02 gcdEuclid：辗转相除") {
     CHECK_EQ(gcdEuclid(1, 1), 1LL);
     CHECK_EQ(gcdEuclid(12, 18), 6LL);
     for (int round = 0; round < 10000; ++round) {
@@ -212,7 +212,7 @@ TEST("gcdEuclid：辗转相除") {
     }
 }
 
-TEST("gcdCN：更相减损") {
+TEST("D02 gcdCN：更相减损") {
     CHECK_EQ(gcdCN(1, 1), 1LL);
     CHECK_EQ(gcdCN(64, 48), 16LL);
     for (int round = 0; round < 10000; ++round) {
@@ -221,7 +221,7 @@ TEST("gcdCN：更相减损") {
     }
 }
 
-TEST("lcsR：朴素递归") {
+TEST("D02 lcsR：朴素递归") {
     CHECK_EQ(lcsR("", "abc"), 0);
     CHECK_EQ(lcsR("program", "algorithm"), 3);
     for (int round = 0; round < 300; ++round) {
@@ -230,7 +230,7 @@ TEST("lcsR：朴素递归") {
     }
 }
 
-TEST("lcsI：动态规划") {
+TEST("D02 lcsI：动态规划") {
     CHECK_EQ(lcsI("", ""), 0);
     CHECK_EQ(lcsI("educational", "advantage"), 4);
     for (int round = 0; round < 300; ++round) {

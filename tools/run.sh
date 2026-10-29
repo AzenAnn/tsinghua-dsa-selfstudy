@@ -14,7 +14,8 @@ rel="$(realpath --relative-to="$ROOT" "$src")"
 bin="$ROOT/build/run/${rel//\//__}"
 bin="${bin%.cpp}"
 mkdir -p "$ROOT/build/run"
-g++ -std=c++17 -O2 -Wall -Wextra -fsanitize=address,undefined -I "$ROOT/include" "$src" -o "$bin"
+# 带上 src/*.cpp，题解里就能用 include/dsa/ 中声明的函数
+g++ -std=c++17 -O2 -Wall -Wextra -fsanitize=address,undefined -I "$ROOT/include" "$src" "$ROOT"/src/*.cpp -o "$bin"
 
 shopt -s nullglob
 samples=("$dir"/*.in)

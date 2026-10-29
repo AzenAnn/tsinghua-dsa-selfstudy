@@ -18,8 +18,8 @@ done
 
 work="$ROOT/build/duipai/$(basename "$dir")"
 mkdir -p "$work"
-g++ -std=c++17 -O2 -I "$ROOT/include" "$dir/sol.cpp" -o "$work/sol"
-g++ -std=c++17 -O2 -I "$ROOT/include" "$dir/brute.cpp" -o "$work/brute"
+g++ -std=c++17 -O2 -I "$ROOT/include" "$dir/sol.cpp" "$ROOT"/src/*.cpp -o "$work/sol"
+g++ -std=c++17 -O2 -I "$ROOT/include" "$dir/brute.cpp" "$ROOT"/src/*.cpp -o "$work/brute"
 
 for ((i = 1; i <= times; i++)); do
     python3 "$dir/gen.py" "$i" > "$work/in"
