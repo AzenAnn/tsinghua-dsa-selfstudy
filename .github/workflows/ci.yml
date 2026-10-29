@@ -1,0 +1,17 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - name: 编译并运行全部测试（Debug + AddressSanitizer + UBSan）
+        run: bash tools/test.sh
+      - name: 计时程序能在 Release 下编译
+        run: |
+          cmake -S . -B build/release -DCMAKE_BUILD_TYPE=Release -DDSA_SANITIZE=OFF
+          cmake --build build/release -j

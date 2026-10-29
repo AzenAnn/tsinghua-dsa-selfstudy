@@ -1,0 +1,7 @@
+{
+    "C_Cpp.default.compileCommands": "${workspaceFolder}/build/debug/compile_commands.json",
+    "C_Cpp.default.cppStandard": "c++17",
+    "C_Cpp.default.includePath": ["${workspaceFolder}/include", "${workspaceFolder}/tests"],
+    "files.associations": { "*.h": "cpp" },
+    "search.exclude": { "build": true, "deng/local-only": true }
+}

@@ -1,0 +1,6 @@
+* text=auto eol=lf
+# 邓老师的原版资料保持原样（Windows 换行），git 不做任何转换
+deng/** -text
+*.pdf binary
+*.xlsx binary
+*.7z binary

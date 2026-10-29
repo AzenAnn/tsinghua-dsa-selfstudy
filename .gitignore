@@ -1,0 +1,19 @@
+# 编译产物（包括 tools/deng.py 生成的 build/deng）
+/build/
+
+# 只放在本地的大文件：教材和讲义 PDF、代码压缩包，请从邓老师的课程主页下载
+/deng/local-only/
+
+# 计时结果因机器而异，只保留目录
+/bench/results/*
+!/bench/results/.gitkeep
+
+# 对拍时找到的反例
+wrong.in
+
+# 编辑器
+.vscode/*
+!.vscode/settings.json
+.idea/
+*.swp
+__pycache__/
