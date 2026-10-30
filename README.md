@@ -6,13 +6,7 @@
 
 清华大学 2026 秋季学期讲义 · 第 3 版教材 · 12 章 · 每个结构都亲手写、亲手测
 
-[![CI](https://github.com/AzenAnn/tsinghua-dsa-selfstudy/actions/workflows/ci.yml/badge.svg)](https://github.com/AzenAnn/tsinghua-dsa-selfstudy/actions/workflows/ci.yml)
-<!-- badge:start -->
-![进度](https://img.shields.io/badge/%E8%BF%9B%E5%BA%A6-0%2F40%20%E5%A4%A9-blue)
-<!-- badge:end -->
-![C++17](https://img.shields.io/badge/C%2B%2B-17-00599C?logo=cplusplus&logoColor=white)
-![CMake](https://img.shields.io/badge/CMake-3.16%2B-064F8C?logo=cmake&logoColor=white)
-![License](https://img.shields.io/badge/license-MIT-green)
+[![CI](https://github.com/AzenAnn/tsinghua-dsa-selfstudy/actions/workflows/ci.yml/badge.svg)](https://github.com/AzenAnn/tsinghua-dsa-selfstudy/actions/workflows/ci.yml) <!-- badge:start -->![进度](https://img.shields.io/badge/%E8%BF%9B%E5%BA%A6-0%2F40%20%E5%A4%A9-blue)<!-- badge:end --> ![C++17](https://img.shields.io/badge/C%2B%2B-17-00599C?logo=cplusplus&logoColor=white) ![CMake](https://img.shields.io/badge/CMake-3.16%2B-064F8C?logo=cmake&logoColor=white) ![License](https://img.shields.io/badge/license-MIT-green)
 
 [学习路线](#roadmap) · [40 天计划](PLAN.md) · [快速开始](#quickstart) · [OJ 题单](learn/problems/README.md) · [邓老师的资料](deng/README.md)
 

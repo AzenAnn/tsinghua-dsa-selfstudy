@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """统计学习进度，写进 README.md 的进度区（<!-- progress:start --> 和 <!-- progress:end --> 之间），
-同时更新标题下面的进度徽章（<!-- badge:start --> 和 <!-- badge:end --> 之间）。
+同时更新标题下面的进度徽章（<!-- badge:start --> 和 <!-- badge:end --> 之间，和其他徽章写在同一行，不能换行）。
 
 数据来源：
   learn/days/分组/DNN/README.md 末尾“完成清单”里的复选框：一天的框全打勾才算这一天完成
@@ -86,7 +86,7 @@ def main() -> None:
     if BADGE_START in text and BADGE_END in text:
         color = "lightgrey" if done_tasks == 0 else ("brightgreen" if done_days == len(days) else "blue")
         url = f"https://img.shields.io/badge/{quote('进度')}-{quote(f'{done_days}/{len(days)} 天', safe='')}-{color}"
-        text = replace_between(text, BADGE_START, BADGE_END, f"{BADGE_START}\n![进度]({url})\n{BADGE_END}")
+        text = replace_between(text, BADGE_START, BADGE_END, f"{BADGE_START}![进度]({url}){BADGE_END}")
     readme.write_text(text, encoding="utf-8")
     print(f"已更新 README.md：{done_days}/{len(days)} 天，{done_tasks}/{all_tasks} 项任务")
 
