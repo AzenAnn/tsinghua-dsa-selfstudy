@@ -1,4 +1,4 @@
-// 第9章 散列表：字符串的散列码。说明见 include/dsa/hashtable.h
+// 第9章 散列表：字符串的散列码。说明见 learn/include/dsa/hashtable.h
 
 #include "dsa/hashtable.h"
 

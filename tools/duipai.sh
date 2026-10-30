@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # 对拍：用随机数据比较你的解法和暴力解法，找到第一组输出不同的数据就停下。
-#   tools/duipai.sh problems/ch02/luogu-P1908-逆序对 [次数，默认 1000]
+#   tools/duipai.sh learn/problems/D01-D08/D05/luogu-P1908-逆序对 [次数，默认 1000]
 # 题目目录里需要：
 #   sol.cpp    要检查的解法
 #   brute.cpp  暴力解法（慢但保证对）
@@ -18,8 +18,8 @@ done
 
 work="$ROOT/build/duipai/$(basename "$dir")"
 mkdir -p "$work"
-g++ -std=c++17 -O2 -I "$ROOT/include" "$dir/sol.cpp" "$ROOT"/src/*.cpp -o "$work/sol"
-g++ -std=c++17 -O2 -I "$ROOT/include" "$dir/brute.cpp" "$ROOT"/src/*.cpp -o "$work/brute"
+g++ -std=c++17 -O2 -I "$ROOT/learn/include" "$dir/sol.cpp" "$ROOT"/src/*.cpp -o "$work/sol"
+g++ -std=c++17 -O2 -I "$ROOT/learn/include" "$dir/brute.cpp" "$ROOT"/src/*.cpp -o "$work/brute"
 
 for ((i = 1; i <= times; i++)); do
     python3 "$dir/gen.py" "$i" > "$work/in"

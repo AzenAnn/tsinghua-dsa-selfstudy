@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
-# 编译并运行一道题（-O2，带 AddressSanitizer 和 UBSan；可以 #include "dsa/..." 用自己写的结构）
-#   tools/run.sh problems/ch02/luogu-P1908-逆序对        目录里的 sol.cpp
-#   tools/run.sh problems/ch02/luogu-P1908-逆序对/x.cpp  指定文件
+# 编译并运行一道题（-O2，带 AddressSanitizer 和 UBSan；可以 #include "dsa/..." 用 learn/include 里自己写的结构）
+#   tools/run.sh learn/problems/D01-D08/D05/luogu-P1908-逆序对        目录里的 sol.cpp
+#   tools/run.sh learn/problems/D01-D08/D05/luogu-P1908-逆序对/x.cpp  指定文件
 # 目录里有 1.in / 1.out 这样成对的样例就逐个比对（忽略行尾空白），没有就从键盘读输入。
 set -euo pipefail
 ROOT="$(cd "$(dirname "$0")/.." && pwd)"
@@ -14,8 +14,8 @@ rel="$(realpath --relative-to="$ROOT" "$src")"
 bin="$ROOT/build/run/${rel//\//__}"
 bin="${bin%.cpp}"
 mkdir -p "$ROOT/build/run"
-# 带上 src/*.cpp，题解里就能用 include/dsa/ 中声明的函数
-g++ -std=c++17 -O2 -Wall -Wextra -fsanitize=address,undefined -I "$ROOT/include" "$src" "$ROOT"/src/*.cpp -o "$bin"
+# 带上 src/*.cpp，题解里就能用 learn/include/dsa/ 中声明的函数；还没写完的函数不报“参数未使用”的警告
+g++ -std=c++17 -O2 -Wall -Wextra -Wno-unused-parameter -fsanitize=address,undefined -I "$ROOT/learn/include" "$src" "$ROOT"/src/*.cpp -o "$bin"
 
 shopt -s nullglob
 samples=("$dir"/*.in)

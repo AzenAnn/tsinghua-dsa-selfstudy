@@ -1,0 +1,94 @@
+# D33 · 12-01 周二 · 第11章 串（三）：BM 好后缀与 Karp-Rabin
+
+> 教材 §11.4–11.5 ｜ 讲义 第11章 ｜ 约 5 小时
+> [← D32](../../D25-D32/D32/README.md) ｜ [总计划](../../../../PLAN.md) ｜ [D34 →](../../D33-D40/D34/README.md)
+
+## 今天的目标
+
+实现 ss 表、gs 表、完整的 BM，以及 Karp-Rabin；第11章收尾。
+
+## 今天要动的文件
+
+| 文件 | 内容 |
+|---|---|
+| `src/string_match.cpp` | “第 33 天”那一段：buildSS、buildGS、matchBM、matchKR |
+| `learn/exercises/ch11/` | 第11章课后习题（今天的题号见“练习”一节） |
+
+## 第 1 步：读书（约 1.5 小时）
+
+打开教材 `deng/local-only/dsacpp-3rd-edn.pdf`，读 §11.4–11.5；再看讲义 `deng/local-only/DSA-2026F-10up-V.pdf` 的第11章。读的时候想清楚这几个问题，读完能用自己的话回答：
+
+- §11.4.3 好后缀策略：gs 表的含义。
+- §11.4.4 ss 表怎样在 O(m) 时间内构造，gs 表怎样由 ss 表得到？
+- §11.5 Karp-Rabin：把串当作数，滚动散列。
+
+## 第 2 步：写代码（约 2 小时）
+
+合上书，按下面的顺序写，每写完一个函数就运行一次测试：
+
+1. 写 `buildSS`（书上的 O(m) 算法；也可以先写一个 O(m²) 的暴力版本保证正确，再改成 O(m)）。
+2. 写 `buildGS`：两种情况，先用“ss[j] == j + 1”的位置填前面，再用 ss 表填其余。测试里有书上 "ICED RICE PRICE" 的标准答案。
+3. 写 `matchBM`：每次右移 max(gs[j], j - bc[...])。
+4. 写 `matchKR`：取一个大素数做模，先算 P 和 T 前 m 个字符的指纹，再逐位滚动；指纹相同时逐字核对，避免冲突带来的误判。
+5. 运行 `DSA_STRICT=1 tools/test.sh ch11`，12 个用例全部通过。
+
+## 第 3 步：检测与调试
+
+运行：
+
+```bash
+DSA_STRICT=1 tools/test.sh ch11
+```
+
+全部完成时，这 12 个用例都显示 `[通过]`，每个测试程序的最后一行是 `通过 …，失败 0，待实现 0`。还没写的函数显示黄色的 `[待实现]`；写错的显示红色的 `[失败]`，下面跟着出错的那行测试代码和两边的实际值。
+
+调试提示：
+
+- buildSS 的 O(m) 写法里，情况一的判断条件是 `ss[m - hi + j - 1] < j - lo`（严格小于），写成 `<=` 会出错；测试按定义暴力对拍，能抓出这个错。
+- Karp-Rabin 滚动时注意先减去最高位再乘基数，取模时防止出现负数。
+
+实测复杂度：
+
+- 运行 `tools/bench.sh ch11_match`，比较各算法在 2、4、26 个字符的字母表上的表现，写进笔记。
+
+## 第 4 步：对照邓老师的代码
+
+测试通过以后再看，逐处对比你的写法，把差异和自己没想到的地方记进笔记：
+
+- `deng/code/src/string_pm_bm_bc+gs/`（pm_bm_buildSS、buildGS）、`string_pm_kr/`。
+
+## 第 5 步：练习（约 1 小时）
+
+- 课后习题（每题一个文件，打开后在“我的解答”下面写；编程题的代码写在同目录的同名 `.cpp` 里）：
+  - 必做：[[11-6]](../../../exercises/ch11/11-6.md)、[[11-7]](../../../exercises/ch11/11-7.md)、[[11-8]](../../../exercises/ch11/11-8.md)
+  - 选做：无
+- 今天是第11章的最后一天：打开 [`learn/exercises/ch11/README.md`](../../../exercises/ch11/README.md)，把本章前几天没做完的必做题补上。
+- OJ 题（在 [learn/problems/README.md](../../../problems/README.md) 里打勾；新建题目用 `python3 tools/new.py problem D33 luogu-P1234 题名`，样例测试用 `tools/run.sh`）：
+  - 必做：[力扣 187. 重复的DNA序列](https://leetcode.cn/problems/repeated-dna-sequences/)（中等，Karp-Rabin）；[力扣 1044. 最长重复子串](https://leetcode.cn/problems/longest-duplicate-substring/)（困难，二分 + Karp-Rabin）
+  - 挑战（选做）：[洛谷 P3193 [HNOI2008] GT考试](https://www.luogu.com.cn/problem/P3193)（省选/NOI−，KMP + 矩阵快速幂）；[CF 126B Password](https://codeforces.com/problemset/problem/126/B)（CF 1700，next 表）
+
+## 第 6 步：笔记与提交（约 0.5 小时）
+
+在 `learn/notes/ch11-串.md` 里写：
+
+- gs 表的 O(m) 构造；各算法适用场景的对比表。
+- 计时结果。
+- 第11章“易错点”汇总。
+
+把下面的完成清单打勾，然后：
+
+```bash
+python3 tools/progress.py
+git add -A
+git commit -m "D33: 完成第11章，BM 与 Karp-Rabin"
+git push
+```
+
+## ✅ 完成清单
+
+- [ ] 读完教材 §11.4–11.5 和讲义，能回答上面的问题
+- [ ] 写完今天的代码
+- [ ] `DSA_STRICT=1 tools/test.sh ch11` 的结果符合预期
+- [ ] 对照了邓老师的代码，差异记进笔记
+- [ ] 完成今天的练习
+- [ ] 写完笔记，提交并推送

@@ -1,4 +1,4 @@
-// 第11章 串匹配：实现。声明和说明见 include/dsa/string_match.h
+// 第11章 串匹配：实现。声明和说明见 learn/include/dsa/string_match.h
 // 每个函数现在都是 DSA_TODO();，把它换成你的实现。
 
 #include "dsa/string_match.h"

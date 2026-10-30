@@ -3,9 +3,9 @@
 同时更新标题下面的进度徽章（<!-- badge:start --> 和 <!-- badge:end --> 之间）。
 
 数据来源：
-  days/DNN/README.md 末尾“完成清单”里的复选框：一天的框全打勾才算这一天完成
-  problems/README.md 里打了勾的题数
-  exercises/ 下“我的解答”写了内容的习题数
+  learn/days/分组/DNN/README.md 末尾“完成清单”里的复选框：一天的框全打勾才算这一天完成
+  learn/problems/README.md 里打了勾的题数
+  learn/exercises/ 下“我的解答”写了内容的习题数
 
 用法：python3 tools/progress.py          更新 README.md
       python3 tools/progress.py --print  只打印，不改文件
@@ -22,7 +22,7 @@ BADGE_START, BADGE_END = "<!-- badge:start -->", "<!-- badge:end -->"
 
 def parse_plan():
     days = []  # [(标题, 已勾数, 总数)]
-    for f in sorted((ROOT / "days").glob("D[0-9][0-9]/README.md")):
+    for f in sorted((ROOT / "learn" / "days").glob("D*-D*/D[0-9][0-9]/README.md")):
         lines = f.read_text(encoding="utf-8").splitlines()
         title = lines[0].lstrip("# ").strip() if lines else f.parent.name
         done = total = 0
@@ -48,10 +48,10 @@ def main() -> None:
     all_tasks = sum(t for _, _, t in days)
     current = next((title for title, d, t in days if d < t), "全部完成 🎉")
     bar = "".join("■" if t and d == t else ("◧" if d else "□") for _, d, t in days)
-    oj = (ROOT / "problems" / "README.md").read_text(encoding="utf-8")
+    oj = (ROOT / "learn" / "problems" / "README.md").read_text(encoding="utf-8")
     oj_done, oj_total = len(re.findall(r"^- \[[xX]\]", oj, re.M)), len(re.findall(r"^- \[[ xX]\]", oj, re.M))
     ex_total = ex_done = 0
-    for p in (ROOT / "exercises").glob("ch*/*.md"):
+    for p in (ROOT / "learn" / "exercises").glob("ch*/*.md"):
         if p.name == "README.md":
             continue
         ex_total += 1
@@ -69,8 +69,8 @@ def main() -> None:
         f"| 天数 | {done_days} / {len(days)} |",
         f"| 计划里的任务 | {done_tasks} / {all_tasks} |",
         f"| 下一步 | {current} |",
-        f"| OJ 题（problems/README.md） | {oj_done} / {oj_total} 道 |",
-        f"| 课后习题（exercises/） | {ex_done} / {ex_total} 道 |",
+        f"| OJ 题（learn/problems/README.md） | {oj_done} / {oj_total} 道 |",
+        f"| 课后习题（learn/exercises/） | {ex_done} / {ex_total} 道 |",
         "",
         "■ 完成　◧ 做了一部分　□ 还没开始。这一块由 `python3 tools/progress.py` 生成，不要手改。",
         END,

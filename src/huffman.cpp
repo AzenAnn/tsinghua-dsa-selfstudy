@@ -1,4 +1,4 @@
-// 第5章 Huffman 编码：实现。声明和说明见 include/dsa/huffman.h
+// 第5章 Huffman 编码：实现。声明和说明见 learn/include/dsa/huffman.h
 // 每个函数现在都是 DSA_TODO();，把它换成你的实现。
 
 #include "dsa/huffman.h"

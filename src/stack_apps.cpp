@@ -1,4 +1,4 @@
-// 第4章 栈与队列的应用：函数的实现。声明和说明见 include/dsa/stack_apps.h
+// 第4章 栈与队列的应用：函数的实现。声明和说明见 learn/include/dsa/stack_apps.h
 // 每个函数现在都是 DSA_TODO();，把它换成你的实现。要用自己写的 Stack / Queue。
 
 #include "dsa/stack_apps.h"

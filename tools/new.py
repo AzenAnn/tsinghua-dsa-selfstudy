@@ -2,12 +2,10 @@
 """按模板新建一道题或一道课后习题。
 
 用法：
-  python3 tools/new.py problem ch02 luogu-P1908 逆序对
-      → problems/ch02/luogu-P1908-逆序对/{sol.cpp, README.md}
-  python3 tools/new.py exercise ch02 2-12
-      → exercises/ch02/2-12.md，并在 exercises/ch02/README.md 的表格里加一行
+  python3 tools/new.py problem D05 luogu-P1908 逆序对
+      → learn/problems/D01-D08/D05/luogu-P1908-逆序对/{sol.cpp, README.md}
   python3 tools/new.py exercise ch02 2-12 --code
-      → 同上，另外建 exercises/ch02/2-12.cpp
+      → 给已有的习题 learn/exercises/ch02/2-12.md 配一个 2-12.cpp
 """
 import sys
 from pathlib import Path
@@ -83,27 +81,27 @@ def main() -> None:
         print(__doc__)
         sys.exit(1)
     kind, chapter = args[0], args[1]
-    if not (chapter.startswith("ch") and chapter[2:].isdigit() and len(chapter) == 4):
-        sys.exit("章节写成 ch01 到 ch12 这样的格式")
 
     if kind == "problem":
-        if len(args) < 4:
-            sys.exit("用法：python3 tools/new.py problem ch02 luogu-P1908 逆序对")
+        day = chapter.upper()
+        if len(args) < 4 or not (day.startswith("D") and day[1:].isdigit() and 1 <= int(day[1:]) <= 40):
+            sys.exit("用法：python3 tools/new.py problem D05 luogu-P1908 逆序对（第二个参数是天数 D01–D40）")
+        n = int(day[1:])
+        group = f"D{(n - 1) // 8 * 8 + 1:02d}-D{(n - 1) // 8 * 8 + 8:02d}"
         source, title = args[2], " ".join(args[3:])
-        d = ROOT / "problems" / chapter / f"{source}-{title}"
+        d = ROOT / "learn" / "problems" / group / f"D{n:02d}" / f"{source}-{title}"
         write(d / "sol.cpp", SOL.format(source=source, title=title))
         write(d / "README.md", PROBLEM_README.format(source=source, title=title, chapter=chapter))
         print(f"把样例存成 1.in / 1.out，然后运行 tools/run.sh {d.relative_to(ROOT)}")
     else:
+        if not (chapter.startswith("ch") and chapter[2:].isdigit() and len(chapter) == 4):
+            sys.exit("章节写成 ch01 到 ch12 这样的格式")
         num = args[2]
-        d = ROOT / "exercises" / chapter
+        d = ROOT / "learn" / "exercises" / chapter
         write(d / f"{num}.md", EXERCISE_MD.format(num=num))
         if "--code" in sys.argv:
             write(d / f"{num}.cpp", EXERCISE_CPP.format(num=num))
-        index = d / "README.md"
-        if index.exists() and f"[{num}]" not in index.read_text(encoding="utf-8"):
-            with open(index, "a", encoding="utf-8") as f:
-                f.write(f"| [{num}]({num}.md) | 未完成 | |\n")
+
 
 
 if __name__ == "__main__":

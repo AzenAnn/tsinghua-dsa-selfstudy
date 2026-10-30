@@ -17,3 +17,7 @@ wrong.in
 .idea/
 *.swp
 __pycache__/
+
+# VS Code 插件 Competitive Programming Helper（cph）抓取题目时生成的测试数据
+.cph/
+*.prob

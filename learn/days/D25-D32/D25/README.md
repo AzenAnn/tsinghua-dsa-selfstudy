@@ -1,0 +1,90 @@
+# D25 · 11-23 周一 · 第8章 高级搜索树（五）：红黑树的删除 ＋ kd-树
+
+> 教材 §8.3–8.4 ｜ 讲义 第8章 ｜ 约 5 小时
+> [← D24](../../D17-D24/D24/README.md) ｜ [总计划](../../../../PLAN.md) ｜ [D26 →](../../D25-D32/D26/README.md)
+
+## 今天的目标
+
+实现红黑树的删除（双黑修正）和 2d-树的构造、范围查询；第8章收尾。
+
+## 今天要动的文件
+
+| 文件 | 内容 |
+|---|---|
+| `learn/include/dsa/redblack.h` | “第 25 天”那一段：remove、solveDoubleBlack |
+| `src/kdtree.cpp` | KdTree 的构造、析构、rangeQuery、height |
+| `learn/exercises/ch08/` | 第8章课后习题（今天的题号见“练习”一节） |
+
+## 第 1 步：读书（约 1.5 小时）
+
+打开教材 `deng/local-only/dsacpp-3rd-edn.pdf`，读 §8.3–8.4；再看讲义 `deng/local-only/DSA-2026F-10up-V.pdf` 的第8章。读的时候想清楚这几个问题，读完能用自己的话回答：
+
+- §8.3.4 双黑修正的四种情况：BB-1（黑兄弟有红孩子）、BB-2R、BB-2B、BB-3（红兄弟）。
+- §8.4 kd-树：怎样构造；范围查询为什么是 O(√n + r)？
+
+## 第 2 步：写代码（约 2 小时）
+
+合上书，按下面的顺序写，每写完一个函数就运行一次测试：
+
+1. 写 `RedBlack::remove`：先用 `removeAt` 删除；如果删的是唯一的节点、或 _hot 的黑高度不需要更新、或接替者是红的（染黑即可），就结束；否则 `solveDoubleBlack`。
+2. 写 `solveDoubleBlack(r)`：按书上的四种情况处理。BB-2B 会对父亲递归，BB-3 转换后对 r 再调用一次。
+3. 运行 `tools/test.sh ch08_redblack`，4 个用例全部通过。
+4. 在 `src/kdtree.cpp` 里写 KdTree：构造时按深度交替用 x、y 坐标的中位数划分（`std::nth_element` 可以用），每个节点记下子树的包围盒；查询时与查询矩形不相交的子树跳过、完全包含的整棵报告。私有成员可以按自己的想法改。
+5. 运行 `DSA_STRICT=1 tools/test.sh ch08`，第8章四个文件共 13 个用例全部通过。
+
+## 第 3 步：检测与调试
+
+运行：
+
+```bash
+DSA_STRICT=1 tools/test.sh ch08
+```
+
+全部完成时，这 13 个用例都显示 `[通过]`，每个测试程序的最后一行是 `通过 …，失败 0，待实现 0`。还没写的函数显示黄色的 `[待实现]`；写错的显示红色的 `[失败]`，下面跟着出错的那行测试代码和两边的实际值。
+
+调试提示：
+
+- 双黑修正最难：用“全部删光”那个用例，在第一次出错的地方打印树的形状和颜色。
+- kd-树的高度应为 ⌊log2 n⌋：用中位数划分（左右两半大小相差不超过 1）才能做到。
+
+## 第 4 步：对照邓老师的代码
+
+测试通过以后再看，逐处对比你的写法，把差异和自己没想到的地方记进笔记：
+
+- `deng/code/src/redBlack/RedBlack_remove.h`、`RedBlack_solveDoubleBlack.h`。
+
+## 第 5 步：练习（约 1 小时）
+
+- 课后习题（每题一个文件，打开后在“我的解答”下面写；编程题的代码写在同目录的同名 `.cpp` 里）：
+  - 必做：[[8-6]](../../../exercises/ch08/8-6.md)、[[8-16]](../../../exercises/ch08/8-16.md)、[[8-19]](../../../exercises/ch08/8-19.md)、[[8-20]](../../../exercises/ch08/8-20.md)
+  - 选做：[[8-3]](../../../exercises/ch08/8-3.md)、[[8-4]](../../../exercises/ch08/8-4.md)、[[8-5]](../../../exercises/ch08/8-5.md)、[[8-7]](../../../exercises/ch08/8-7.md)、[[8-8]](../../../exercises/ch08/8-8.md)、[[8-17]](../../../exercises/ch08/8-17.md)、[[8-18]](../../../exercises/ch08/8-18.md)
+- 今天是第8章的最后一天：打开 [`learn/exercises/ch08/README.md`](../../../exercises/ch08/README.md)，把本章前几天没做完的必做题补上。
+- OJ 题（在 [learn/problems/README.md](../../../problems/README.md) 里打勾；新建题目用 `python3 tools/new.py problem D25 luogu-P1234 题名`，样例测试用 `tools/run.sh`）：
+  - 必做：[洛谷 P1486 [NOI2004] 郁闷的出纳员](https://www.luogu.com.cn/problem/P1486)（提高+/省选−，平衡树）；[洛谷 P1429 平面最近点对（加强版）](https://www.luogu.com.cn/problem/P1429)（提高+/省选−，kd-树或分治）
+  - 挑战（选做）：[洛谷 P6136 【模板】普通平衡树（数据加强版）](https://www.luogu.com.cn/problem/P6136)（省选/NOI−，强制在线）；[洛谷 P4148 简单题](https://www.luogu.com.cn/problem/P4148)（NOI/NOI+/CTSC，kd-树）；[洛谷 P3224 [HNOI2012] 永无乡](https://www.luogu.com.cn/problem/P3224)（省选/NOI−，平衡树启发式合并）
+
+## 第 6 步：笔记与提交（约 0.5 小时）
+
+在 `learn/notes/ch08-高级搜索树.md` 里写：
+
+- 删除四种情况的判定顺序和拓扑变化次数。
+- kd-树范围查询的复杂度证明。
+- 第8章“易错点”汇总。
+
+把下面的完成清单打勾，然后：
+
+```bash
+python3 tools/progress.py
+git add -A
+git commit -m "D25: 完成第8章，红黑树与 kd-树"
+git push
+```
+
+## ✅ 完成清单
+
+- [ ] 读完教材 §8.3–8.4 和讲义，能回答上面的问题
+- [ ] 写完今天的代码
+- [ ] `DSA_STRICT=1 tools/test.sh ch08` 的结果符合预期
+- [ ] 对照了邓老师的代码，差异记进笔记
+- [ ] 完成今天的练习
+- [ ] 写完笔记，提交并推送

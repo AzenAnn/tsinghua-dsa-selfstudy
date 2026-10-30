@@ -12,10 +12,10 @@ endif()
 
 option(DSA_SANITIZE "打开 AddressSanitizer 和 UBSan，抓越界、内存泄漏和未定义行为" ON)
 
-# 自己实现的代码：模板类只有头文件（include/dsa/*.h），普通函数的实现在 src/*.cpp，一起编成库 dsa
+# 自己实现的代码：模板类只有头文件（learn/include/dsa/*.h），普通函数的实现在 src/*.cpp，一起编成库 dsa
 file(GLOB DSA_SOURCES CONFIGURE_DEPENDS ${PROJECT_SOURCE_DIR}/src/*.cpp)
 add_library(dsa STATIC ${DSA_SOURCES})
-target_include_directories(dsa PUBLIC ${PROJECT_SOURCE_DIR}/include)
+target_include_directories(dsa PUBLIC ${PROJECT_SOURCE_DIR}/learn/include)
 target_compile_options(dsa PUBLIC -Wall -Wextra -Wno-unused-parameter)
 if(DSA_SANITIZE)
   target_compile_options(dsa PUBLIC -fsanitize=address,undefined -fno-omit-frame-pointer)
@@ -43,8 +43,8 @@ foreach(src ${DSA_BENCHES})
   target_compile_definitions(bench_${name} PRIVATE DSA_BENCH_DIR="${PROJECT_SOURCE_DIR}/bench/results")
 endforeach()
 
-# projects/ 下每个带 CMakeLists.txt 的综合项目（它们的测试程序 test_proj_* 也由 tools/test.sh 运行）
-file(GLOB DSA_PROJECTS LIST_DIRECTORIES true ${PROJECT_SOURCE_DIR}/projects/*)
+# learn/projects/ 下每个带 CMakeLists.txt 的综合项目（它们的测试程序 test_proj_* 也由 tools/test.sh 运行）
+file(GLOB DSA_PROJECTS LIST_DIRECTORIES true ${PROJECT_SOURCE_DIR}/learn/projects/*)
 foreach(dir ${DSA_PROJECTS})
   if(EXISTS ${dir}/CMakeLists.txt)
     add_subdirectory(${dir})
