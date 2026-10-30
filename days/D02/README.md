@@ -13,7 +13,7 @@
 |---|---|
 | `src/ch01_intro.cpp` | sumLinear、sumBinary、reverseR/I、max2I/R、hanoi、fibR/L/I、gcdEuclid、gcdCN、lcsR、lcsI |
 | `notes/ch01-绪论.md` | 补完第1章笔记 |
-| `exercises/ch01/` | 第1章课后习题 |
+| `exercises/ch01/` | 第1章课后习题（今天的题号见“练习”一节） |
 
 ## 第 1 步：读书（约 1.5 小时）
 
@@ -65,7 +65,10 @@ DSA_STRICT=1 tools/test.sh ch01
 
 ## 第 5 步：练习（约 1 小时）
 
-- 第1章课后习题：带 * 的题和编程题必做。每道题用 `python3 tools/new.py exercise ch01 1-3` 这样建文件（题号换成实际的）。
+- 课后习题（每题一个文件，打开后在“我的解答”下面写；编程题的代码写在同目录的同名 `.cpp` 里）：
+  - 必做：[[1-14]](../../exercises/ch01/1-14.md)、[[1-15]](../../exercises/ch01/1-15.md)、[[1-16]](../../exercises/ch01/1-16.md)、[[1-17]](../../exercises/ch01/1-17.md)、[[1-19]](../../exercises/ch01/1-19.md)、[[1-20]](../../exercises/ch01/1-20.md)、[[1-22]](../../exercises/ch01/1-22.md)、[[1-23]](../../exercises/ch01/1-23.md)、[[1-24]](../../exercises/ch01/1-24.md)、[[1-25]](../../exercises/ch01/1-25.md)、[[1-26]](../../exercises/ch01/1-26.md)、[[1-27]](../../exercises/ch01/1-27.md)、[[1-28]](../../exercises/ch01/1-28.md)、[[1-29]](../../exercises/ch01/1-29.md)
+  - 选做：[[1-18]](../../exercises/ch01/1-18.md)、[[1-21]](../../exercises/ch01/1-21.md)、[[1-30]](../../exercises/ch01/1-30.md)、[[1-31]](../../exercises/ch01/1-31.md)、[[1-32]](../../exercises/ch01/1-32.md)
+- 今天是第1章的最后一天：打开 [`exercises/ch01/README.md`](../../exercises/ch01/README.md)，把本章前几天没做完的必做题补上。
 - OJ：problems/README.md 里第1章的 4 道题，用 `python3 tools/new.py problem ch01 leetcode-509 斐波那契数` 建目录，样例存成 `1.in`/`1.out`，再用 `tools/run.sh problems/ch01/leetcode-509-斐波那契数` 测。
 
 ## 第 6 步：笔记与提交（约 0.5 小时）

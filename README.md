@@ -8,7 +8,7 @@
 
 [![CI](https://github.com/AzenAnn/tsinghua-dsa-selfstudy/actions/workflows/ci.yml/badge.svg)](https://github.com/AzenAnn/tsinghua-dsa-selfstudy/actions/workflows/ci.yml)
 <!-- badge:start -->
-![进度](https://img.shields.io/badge/%E8%BF%9B%E5%BA%A6-0%2F40%20%E5%A4%A9-lightgrey)
+![进度](https://img.shields.io/badge/%E8%BF%9B%E5%BA%A6-0%2F40%20%E5%A4%A9-blue)
 <!-- badge:end -->
 ![C++17](https://img.shields.io/badge/C%2B%2B-17-00599C?logo=cplusplus&logoColor=white)
 ![CMake](https://img.shields.io/badge/CMake-3.16%2B-064F8C?logo=cmake&logoColor=white)
@@ -30,15 +30,15 @@
 ## 📈 进度
 
 <!-- progress:start -->
-`□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□`
+`◧□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□`
 
 | 项目 | 进度 |
 |---|---|
 | 天数 | 0 / 40 |
-| 计划里的任务 | 0 / 235 |
+| 计划里的任务 | 3 / 235 |
 | 下一步 | D01 · 10-30 周五 · 搭环境 ＋ 第1章 绪论（上） |
 | OJ 题（problems/） | 0 道 |
-| 课后习题（exercises/） | 0 道 |
+| 课后习题（exercises/） | 0 / 292 道 |
 
 ■ 完成　◧ 做了一部分　□ 还没开始。这一块由 `python3 tools/progress.py` 生成，不要手改。
 <!-- progress:end -->
@@ -107,14 +107,14 @@ flowchart LR
 |---|---|
 | 1.5 h | 看讲义，读教材对应的小节 |
 | 2 h | 合上书实现 → `tools/test.sh` 通过 → 和邓老师的实现对照，差异记进笔记 |
-| 1 h | 课后习题或 OJ 题 |
+| 1 h | 当天安排的课后习题（`exercises/`）和 OJ 题 |
 | 0.5 h | 写笔记，在当天指南末尾的完成清单里打勾，`python3 tools/progress.py`，commit 并 push |
 
 **一章算完成**，要同时满足：
 
 - `DSA_STRICT=1 tools/test.sh chNN` 全部通过；
 - 笔记写完；
-- 带 \* 的课后习题和编程题做完；
+- 本章必做的课后习题（编程题、证明题）做完；
 - 这一章的 OJ 题做完。
 
 <a id="quickstart"></a>
@@ -145,7 +145,6 @@ tools/test.sh                     # 编译并运行全部测试
 | `python3 tools/new.py problem ch02 luogu-P1908 逆序对` | 新建一道 OJ 题 |
 | `tools/run.sh problems/ch02/luogu-P1908-逆序对` | 编译并比对样例 |
 | `tools/duipai.sh problems/ch02/luogu-P1908-逆序对` | 和暴力解法随机对拍 |
-| `python3 tools/new.py exercise ch02 2-12` | 新建一道课后习题 |
 | `python3 tools/progress.py` | 按每天指南里完成清单的打勾情况更新进度 |
 | `python3 tools/deng.py list` | 列出邓老师代码包里的示例 |
 | `python3 tools/deng.py fibonacci -- 20` | 在 Linux 上编译并运行一个示例 |
@@ -180,7 +179,7 @@ tsinghua-dsa-selfstudy/
 ├── 📂 tests/             单元测试 + 随机对拍（dsa_test.h 是自带的小测试框架）
 ├── 📂 bench/             实测耗时，和理论复杂度对照
 ├── 📂 notes/             每章笔记
-├── 📂 exercises/         教材课后习题
+├── 📂 exercises/         教材全部 292 道课后习题，一题一个文件，已安排到每一天
 ├── 📂 problems/          OJ 题（清华 PA、洛谷、LeetCode）
 ├── 📂 projects/          综合项目 minikv、huffzip
 ├── 📂 tools/             安装、测试、计时、做题、对拍、进度统计等脚本

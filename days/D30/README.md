@@ -13,7 +13,7 @@
 |---|---|
 | `include/dsa/pq.h` | “第 30 天”那一段：merge、PQ_LeftHeap 的 insert、getMax、delMax、merge |
 | `src/huffman.cpp` | （选做）把森林从 List 换成堆 |
-| `exercises/ch10/` | 第10章课后习题 |
+| `exercises/ch10/` | 第10章课后习题（今天的题号见“练习”一节） |
 
 ## 第 1 步：读书（约 1.5 小时）
 
@@ -54,7 +54,10 @@ DSA_STRICT=1 tools/test.sh ch10
 
 ## 第 5 步：练习（约 1 小时）
 
-- 第10章课后习题：带 * 的题和编程题。
+- 课后习题（每题一个文件，打开后在“我的解答”下面写；编程题的代码写在同目录的同名 `.cpp` 里）：
+  - 必做：[[10-13]](../../exercises/ch10/10-13.md)、[[10-15]](../../exercises/ch10/10-15.md)、[[10-16]](../../exercises/ch10/10-16.md)、[[10-17]](../../exercises/ch10/10-17.md)、[[10-18]](../../exercises/ch10/10-18.md)
+  - 选做：[[10-19]](../../exercises/ch10/10-19.md)、[[10-20]](../../exercises/ch10/10-20.md)、[[10-21]](../../exercises/ch10/10-21.md)、[[10-22]](../../exercises/ch10/10-22.md)
+- 今天是第10章的最后一天：打开 [`exercises/ch10/README.md`](../../exercises/ch10/README.md)，把本章前几天没做完的必做题补上。
 - 洛谷 P3377 左偏树、P1456 Monkey King；LeetCode 23。
 
 ## 第 6 步：笔记与提交（约 0.5 小时）

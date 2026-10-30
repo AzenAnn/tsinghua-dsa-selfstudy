@@ -5,7 +5,7 @@
 数据来源：
   days/DNN/README.md 末尾“完成清单”里的复选框：一天的框全打勾才算这一天完成
   problems/ 下有 sol.cpp 的题目目录数
-  exercises/ 下的习题文件数
+  exercises/ 下“我的解答”写了内容的习题数
 
 用法：python3 tools/progress.py          更新 README.md
       python3 tools/progress.py --print  只打印，不改文件
@@ -49,7 +49,15 @@ def main() -> None:
     current = next((title for title, d, t in days if d < t), "全部完成 🎉")
     bar = "".join("■" if t and d == t else ("◧" if d else "□") for _, d, t in days)
     problems = sum(1 for p in (ROOT / "problems").rglob("sol.cpp"))
-    exercises = sum(1 for p in (ROOT / "exercises").rglob("*.md") if p.name != "README.md")
+    ex_total = ex_done = 0
+    for p in (ROOT / "exercises").glob("ch*/*.md"):
+        if p.name == "README.md":
+            continue
+        ex_total += 1
+        text = p.read_text(encoding="utf-8")
+        mine = text.split("## 我的解答", 1)[-1].split("## 对照官方解答后的反思", 1)[0]
+        mine = "\n".join(l for l in mine.splitlines() if not l.startswith("代码写在同目录"))
+        ex_done += bool(mine.strip())
 
     block = "\n".join([
         START,
@@ -61,7 +69,7 @@ def main() -> None:
         f"| 计划里的任务 | {done_tasks} / {all_tasks} |",
         f"| 下一步 | {current} |",
         f"| OJ 题（problems/） | {problems} 道 |",
-        f"| 课后习题（exercises/） | {exercises} 道 |",
+        f"| 课后习题（exercises/） | {ex_done} / {ex_total} 道 |",
         "",
         "■ 完成　◧ 做了一部分　□ 还没开始。这一块由 `python3 tools/progress.py` 生成，不要手改。",
         END,

@@ -12,7 +12,7 @@
 | 文件 | 内容 |
 |---|---|
 | `include/dsa/list.h` | “第 7 天”那一段：uniquify、search、selectMax、insertionSort、selectionSort、merge、mergeSort、sort、reverse |
-| `exercises/ch03/` | 第3章课后习题 |
+| `exercises/ch03/` | 第3章课后习题（今天的题号见“练习”一节） |
 
 ## 第 1 步：读书（约 1.5 小时）
 
@@ -55,7 +55,10 @@ DSA_STRICT=1 tools/test.sh ch03
 
 ## 第 5 步：练习（约 1 小时）
 
-- 第3章课后习题：带 * 的题和编程题。
+- 课后习题（每题一个文件，打开后在“我的解答”下面写；编程题的代码写在同目录的同名 `.cpp` 里）：
+  - 必做：[[3-4]](../../exercises/ch03/3-4.md)、[[3-5]](../../exercises/ch03/3-5.md)、[[3-6]](../../exercises/ch03/3-6.md)、[[3-8]](../../exercises/ch03/3-8.md)、[[3-9]](../../exercises/ch03/3-9.md)、[[3-10]](../../exercises/ch03/3-10.md)、[[3-11]](../../exercises/ch03/3-11.md)、[[3-13]](../../exercises/ch03/3-13.md)、[[3-14]](../../exercises/ch03/3-14.md)、[[3-16]](../../exercises/ch03/3-16.md)、[[3-17]](../../exercises/ch03/3-17.md)、[[3-18]](../../exercises/ch03/3-18.md)、[[3-19]](../../exercises/ch03/3-19.md)
+  - 选做：[[3-7]](../../exercises/ch03/3-7.md)、[[3-12]](../../exercises/ch03/3-12.md)、[[3-15]](../../exercises/ch03/3-15.md)
+- 今天是第3章的最后一天：打开 [`exercises/ch03/README.md`](../../exercises/ch03/README.md)，把本章前几天没做完的必做题补上。
 - LeetCode 148 排序链表（用归并）、146 LRU 缓存（哈希表 + 双向链表）。
 
 ## 第 6 步：笔记与提交（约 0.5 小时）

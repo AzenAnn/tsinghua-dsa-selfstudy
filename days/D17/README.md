@@ -12,7 +12,7 @@
 | 文件 | 内容 |
 |---|---|
 | `include/dsa/graph.h` | “第 17 天”那一段：PFS、pfs、PrimPU、DijkPU、prim、dijkstra |
-| `exercises/ch06/` | 第6章课后习题 |
+| `exercises/ch06/` | 第6章课后习题（今天的题号见“练习”一节） |
 
 ## 第 1 步：读书（约 1.5 小时）
 
@@ -55,7 +55,10 @@ DSA_STRICT=1 tools/test.sh ch06
 
 ## 第 5 步：练习（约 1 小时）
 
-- 第6章课后习题：带 * 的题和编程题。
+- 课后习题（每题一个文件，打开后在“我的解答”下面写；编程题的代码写在同目录的同名 `.cpp` 里）：
+  - 必做：[[6-18]](../../exercises/ch06/6-18.md)、[[6-21]](../../exercises/ch06/6-21.md)、[[6-22]](../../exercises/ch06/6-22.md)、[[6-24]](../../exercises/ch06/6-24.md)、[[6-25]](../../exercises/ch06/6-25.md)、[[6-27]](../../exercises/ch06/6-27.md)、[[6-28]](../../exercises/ch06/6-28.md)、[[6-30]](../../exercises/ch06/6-30.md)、[[6-32]](../../exercises/ch06/6-32.md)
+  - 选做：[[6-17]](../../exercises/ch06/6-17.md)、[[6-23]](../../exercises/ch06/6-23.md)、[[6-26]](../../exercises/ch06/6-26.md)、[[6-29]](../../exercises/ch06/6-29.md)、[[6-31]](../../exercises/ch06/6-31.md)
+- 今天是第6章的最后一天：打开 [`exercises/ch06/README.md`](../../exercises/ch06/README.md)，把本章前几天没做完的必做题补上。
 - 洛谷 P3366 最小生成树、P4779 单源最短路径；LeetCode 743。
 
 ## 第 6 步：笔记与提交（约 0.5 小时）

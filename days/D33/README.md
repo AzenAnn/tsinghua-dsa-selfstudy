@@ -12,7 +12,7 @@
 | 文件 | 内容 |
 |---|---|
 | `src/string_match.cpp` | “第 33 天”那一段：buildSS、buildGS、matchBM、matchKR |
-| `exercises/ch11/` | 第11章课后习题 |
+| `exercises/ch11/` | 第11章课后习题（今天的题号见“练习”一节） |
 
 ## 第 1 步：读书（约 1.5 小时）
 
@@ -59,7 +59,10 @@ DSA_STRICT=1 tools/test.sh ch11
 
 ## 第 5 步：练习（约 1 小时）
 
-- 第11章课后习题：带 * 的题和编程题。
+- 课后习题（每题一个文件，打开后在“我的解答”下面写；编程题的代码写在同目录的同名 `.cpp` 里）：
+  - 必做：[[11-6]](../../exercises/ch11/11-6.md)、[[11-7]](../../exercises/ch11/11-7.md)、[[11-8]](../../exercises/ch11/11-8.md)
+  - 选做：无
+- 今天是第11章的最后一天：打开 [`exercises/ch11/README.md`](../../exercises/ch11/README.md)，把本章前几天没做完的必做题补上。
 - LeetCode 459 重复的子字符串、187 重复的 DNA 序列（Karp-Rabin）。
 
 ## 第 6 步：笔记与提交（约 0.5 小时）

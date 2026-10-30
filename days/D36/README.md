@@ -12,7 +12,7 @@
 | 文件 | 内容 |
 |---|---|
 | `include/dsa/vector.h` | “第 36 天”那一段：shellSort |
-| `exercises/ch12/` | 第12章课后习题 |
+| `exercises/ch12/` | 第12章课后习题（今天的题号见“练习”一节） |
 
 ## 第 1 步：读书（约 1.5 小时）
 
@@ -56,7 +56,7 @@ DSA_STRICT=1 tools/test.sh ch12
 
 ## 第 5 步：练习（约 1 小时）
 
-- 第12章课后习题：带 * 的题和编程题。
+- 今天是第12章的最后一天：打开 [`exercises/ch12/README.md`](../../exercises/ch12/README.md)，把本章前几天没做完的必做题补上。
 
 ## 第 6 步：笔记与提交（约 0.5 小时）
 

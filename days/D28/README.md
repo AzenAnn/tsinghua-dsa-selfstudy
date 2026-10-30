@@ -12,7 +12,7 @@
 | 文件 | 内容 |
 |---|---|
 | `src/sort_linear.cpp` | countingSort、radixSort、bucketSort、maxGap |
-| `exercises/ch09/` | 第9章课后习题 |
+| `exercises/ch09/` | 第9章课后习题（今天的题号见“练习”一节） |
 
 ## 第 1 步：读书（约 1.5 小时）
 
@@ -52,7 +52,10 @@ DSA_STRICT=1 tools/test.sh ch09
 
 ## 第 5 步：练习（约 1 小时）
 
-- 第9章课后习题：带 * 的题和编程题。
+- 课后习题（每题一个文件，打开后在“我的解答”下面写；编程题的代码写在同目录的同名 `.cpp` 里）：
+  - 必做：[[9-22]](../../exercises/ch09/9-22.md)、[[9-23]](../../exercises/ch09/9-23.md)、[[9-24]](../../exercises/ch09/9-24.md)、[[9-25]](../../exercises/ch09/9-25.md)、[[9-26]](../../exercises/ch09/9-26.md)
+  - 选做：[[9-21]](../../exercises/ch09/9-21.md)
+- 今天是第9章的最后一天：打开 [`exercises/ch09/README.md`](../../exercises/ch09/README.md)，把本章前几天没做完的必做题补上。
 - LeetCode 164 最大间距；洛谷 P1177 用基数排序过一次。
 
 ## 第 6 步：笔记与提交（约 0.5 小时）

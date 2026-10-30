@@ -12,7 +12,7 @@
 | 文件 | 内容 |
 |---|---|
 | `include/dsa/vector.h` | “第 5 天”那一段：disordered、uniquify、search、binSearchA/B/C、fibSearchA/B、sort、bubbleSort、merge、mergeSort |
-| `exercises/ch02/` | 第2章课后习题 |
+| `exercises/ch02/` | 第2章课后习题（今天的题号见“练习”一节） |
 | `problems/ch02/` | 第2章的 OJ 题 |
 
 ## 第 1 步：读书（约 1.5 小时）
@@ -60,7 +60,10 @@ DSA_STRICT=1 tools/test.sh ch02
 
 ## 第 5 步：练习（约 1 小时）
 
-- 第2章课后习题：带 * 的题和编程题。
+- 课后习题（每题一个文件，打开后在“我的解答”下面写；编程题的代码写在同目录的同名 `.cpp` 里）：
+  - 必做：[[2-13]](../../exercises/ch02/2-13.md)、[[2-15]](../../exercises/ch02/2-15.md)、[[2-17]](../../exercises/ch02/2-17.md)、[[2-18]](../../exercises/ch02/2-18.md)、[[2-21]](../../exercises/ch02/2-21.md)、[[2-24]](../../exercises/ch02/2-24.md)、[[2-26]](../../exercises/ch02/2-26.md)、[[2-28]](../../exercises/ch02/2-28.md)、[[2-30]](../../exercises/ch02/2-30.md)、[[2-31]](../../exercises/ch02/2-31.md)、[[2-34]](../../exercises/ch02/2-34.md)、[[2-37]](../../exercises/ch02/2-37.md)、[[2-41]](../../exercises/ch02/2-41.md)
+  - 选做：[[2-14]](../../exercises/ch02/2-14.md)、[[2-16]](../../exercises/ch02/2-16.md)、[[2-19]](../../exercises/ch02/2-19.md)、[[2-20]](../../exercises/ch02/2-20.md)、[[2-22]](../../exercises/ch02/2-22.md)、[[2-23]](../../exercises/ch02/2-23.md)、[[2-25]](../../exercises/ch02/2-25.md)、[[2-27]](../../exercises/ch02/2-27.md)、[[2-29]](../../exercises/ch02/2-29.md)、[[2-32]](../../exercises/ch02/2-32.md)、[[2-33]](../../exercises/ch02/2-33.md)、[[2-35]](../../exercises/ch02/2-35.md)、[[2-36]](../../exercises/ch02/2-36.md)、[[2-38]](../../exercises/ch02/2-38.md)、[[2-39]](../../exercises/ch02/2-39.md)、[[2-40]](../../exercises/ch02/2-40.md)
+- 今天是第2章的最后一天：打开 [`exercises/ch02/README.md`](../../exercises/ch02/README.md)，把本章前几天没做完的必做题补上。
 - OJ：LeetCode 26、704、35、88，洛谷 P1908 逆序对（在归并时顺便统计逆序对）。
 
 ## 第 6 步：笔记与提交（约 0.5 小时）

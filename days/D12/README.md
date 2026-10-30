@@ -55,6 +55,9 @@ DSA_STRICT=1 tools/test.sh ch05_bintree
 
 ## 第 5 步：练习（约 1 小时）
 
+- 课后习题（每题一个文件，打开后在“我的解答”下面写；编程题的代码写在同目录的同名 `.cpp` 里）：
+  - 必做：[[5-6]](../../exercises/ch05/5-6.md)、[[5-8]](../../exercises/ch05/5-8.md)、[[5-9]](../../exercises/ch05/5-9.md)、[[5-10]](../../exercises/ch05/5-10.md)、[[5-11]](../../exercises/ch05/5-11.md)、[[5-12]](../../exercises/ch05/5-12.md)、[[5-14]](../../exercises/ch05/5-14.md)、[[5-15]](../../exercises/ch05/5-15.md)、[[5-16]](../../exercises/ch05/5-16.md)、[[5-18]](../../exercises/ch05/5-18.md)
+  - 选做：[[5-5]](../../exercises/ch05/5-5.md)、[[5-7]](../../exercises/ch05/5-7.md)、[[5-13]](../../exercises/ch05/5-13.md)、[[5-17]](../../exercises/ch05/5-17.md)
 - LeetCode 144 / 94 / 145（用迭代写）、102、105、889；洛谷 P1030 求先序排列。
 
 ## 第 6 步：笔记与提交（约 0.5 小时）

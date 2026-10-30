@@ -13,7 +13,7 @@
 |---|---|
 | `include/dsa/redblack.h` | “第 25 天”那一段：remove、solveDoubleBlack |
 | `src/kdtree.cpp` | KdTree 的构造、析构、rangeQuery、height |
-| `exercises/ch08/` | 第8章课后习题 |
+| `exercises/ch08/` | 第8章课后习题（今天的题号见“练习”一节） |
 
 ## 第 1 步：读书（约 1.5 小时）
 
@@ -55,7 +55,10 @@ DSA_STRICT=1 tools/test.sh ch08
 
 ## 第 5 步：练习（约 1 小时）
 
-- 第8章课后习题：带 * 的题和编程题。
+- 课后习题（每题一个文件，打开后在“我的解答”下面写；编程题的代码写在同目录的同名 `.cpp` 里）：
+  - 必做：[[8-6]](../../exercises/ch08/8-6.md)、[[8-16]](../../exercises/ch08/8-16.md)、[[8-19]](../../exercises/ch08/8-19.md)、[[8-20]](../../exercises/ch08/8-20.md)
+  - 选做：[[8-3]](../../exercises/ch08/8-3.md)、[[8-4]](../../exercises/ch08/8-4.md)、[[8-5]](../../exercises/ch08/8-5.md)、[[8-7]](../../exercises/ch08/8-7.md)、[[8-8]](../../exercises/ch08/8-8.md)、[[8-17]](../../exercises/ch08/8-17.md)、[[8-18]](../../exercises/ch08/8-18.md)
+- 今天是第8章的最后一天：打开 [`exercises/ch08/README.md`](../../exercises/ch08/README.md)，把本章前几天没做完的必做题补上。
 - 洛谷 P3369 用红黑树再过一次；P1429 平面最近点对（kd-树）。
 
 ## 第 6 步：笔记与提交（约 0.5 小时）

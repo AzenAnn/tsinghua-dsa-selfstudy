@@ -13,7 +13,7 @@
 |---|---|
 | `include/dsa/queue.h` | Queue 的 enqueue、dequeue、front |
 | `src/stack_apps.cpp` | “第 10 天”那一段：placeQueens、labyrinth、bankSimulate |
-| `exercises/ch04/` | 第4章课后习题 |
+| `exercises/ch04/` | 第4章课后习题（今天的题号见“练习”一节） |
 
 ## 第 1 步：读书（约 1.5 小时）
 
@@ -57,7 +57,10 @@ DSA_STRICT=1 tools/test.sh ch04
 
 ## 第 5 步：练习（约 1 小时）
 
-- 第4章课后习题：带 * 的题和编程题。
+- 课后习题（每题一个文件，打开后在“我的解答”下面写；编程题的代码写在同目录的同名 `.cpp` 里）：
+  - 必做：[[4-16]](../../exercises/ch04/4-16.md)、[[4-18]](../../exercises/ch04/4-18.md)、[[4-19]](../../exercises/ch04/4-19.md)、[[4-22]](../../exercises/ch04/4-22.md)、[[4-23]](../../exercises/ch04/4-23.md)、[[4-24]](../../exercises/ch04/4-24.md)、[[4-25]](../../exercises/ch04/4-25.md)、[[4-26]](../../exercises/ch04/4-26.md)
+  - 选做：[[4-17]](../../exercises/ch04/4-17.md)、[[4-20]](../../exercises/ch04/4-20.md)、[[4-21]](../../exercises/ch04/4-21.md)
+- 今天是第4章的最后一天：打开 [`exercises/ch04/README.md`](../../exercises/ch04/README.md)，把本章前几天没做完的必做题补上。
 - LeetCode 51 N 皇后、622 设计循环队列、84 柱状图中最大的矩形。
 
 ## 第 6 步：笔记与提交（约 0.5 小时）

@@ -13,7 +13,7 @@
 |---|---|
 | `include/dsa/bst.h` | “第 20 天”那一段：connect34、rotateAt |
 | `include/dsa/avl.h` | AVL 的 insert、remove |
-| `exercises/ch07/` | 第7章课后习题 |
+| `exercises/ch07/` | 第7章课后习题（今天的题号见“练习”一节） |
 
 ## 第 1 步：读书（约 1.5 小时）
 
@@ -56,7 +56,10 @@ DSA_STRICT=1 tools/test.sh ch07
 
 ## 第 5 步：练习（约 1 小时）
 
-- 第7章课后习题：带 * 的题和编程题。
+- 课后习题（每题一个文件，打开后在“我的解答”下面写；编程题的代码写在同目录的同名 `.cpp` 里）：
+  - 必做：[[7-6]](../../exercises/ch07/7-6.md)、[[7-9]](../../exercises/ch07/7-9.md)、[[7-14]](../../exercises/ch07/7-14.md)、[[7-15]](../../exercises/ch07/7-15.md)、[[7-17]](../../exercises/ch07/7-17.md)、[[7-20]](../../exercises/ch07/7-20.md)
+  - 选做：[[7-7]](../../exercises/ch07/7-7.md)、[[7-8]](../../exercises/ch07/7-8.md)、[[7-16]](../../exercises/ch07/7-16.md)、[[7-18]](../../exercises/ch07/7-18.md)、[[7-19]](../../exercises/ch07/7-19.md)
+- 今天是第7章的最后一天：打开 [`exercises/ch07/README.md`](../../exercises/ch07/README.md)，把本章前几天没做完的必做题补上。
 - LeetCode 110；洛谷 P3369 普通平衡树（用你的 AVL）。
 
 ## 第 6 步：笔记与提交（约 0.5 小时）
