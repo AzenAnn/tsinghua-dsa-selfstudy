@@ -61,7 +61,10 @@ tools/test.sh ch10 D29
 - 课后习题（每题一个文件，打开后在“我的解答”下面写；编程题的代码写在同目录的同名 `.cpp` 里）：
   - 必做：[[10-1]](../../exercises/ch10/10-1.md)、[[10-2]](../../exercises/ch10/10-2.md)、[[10-3]](../../exercises/ch10/10-3.md)、[[10-4]](../../exercises/ch10/10-4.md)、[[10-8]](../../exercises/ch10/10-8.md)、[[10-9]](../../exercises/ch10/10-9.md)、[[10-11]](../../exercises/ch10/10-11.md)、[[10-14]](../../exercises/ch10/10-14.md)
   - 选做：[[10-5]](../../exercises/ch10/10-5.md)、[[10-6]](../../exercises/ch10/10-6.md)、[[10-7]](../../exercises/ch10/10-7.md)、[[10-10]](../../exercises/ch10/10-10.md)、[[10-12]](../../exercises/ch10/10-12.md)
-- 洛谷 P3378 堆；LeetCode 215。
+- OJ 题（在 [problems/README.md](../../problems/README.md) 里打勾；新建题目用 `python3 tools/new.py problem chNN luogu-P1234 题名`，样例测试用 `tools/run.sh`）：
+  - 必做：[力扣 215. 数组中的第K个最大元素](https://leetcode.cn/problems/kth-largest-element-in-an-array/)（中等）；[洛谷 P1168 中位数](https://www.luogu.com.cn/problem/P1168)（普及/提高−，对顶堆）；[力扣 295. 数据流的中位数](https://leetcode.cn/problems/find-median-from-data-stream/)（困难，对顶堆）；[洛谷 P1631 序列合并](https://www.luogu.com.cn/problem/P1631)（普及+/提高）；[洛谷 P2085 最小函数值](https://www.luogu.com.cn/problem/P2085)（普及/提高−）
+  - 热身（选做）：[洛谷 P3378 【模板】堆](https://www.luogu.com.cn/problem/P3378)（普及/提高−）；[力扣 703. 数据流中的第 K 大元素](https://leetcode.cn/problems/kth-largest-element-in-a-stream/)（简单）；[力扣 1046. 最后一块石头的重量](https://leetcode.cn/problems/last-stone-weight/)（简单）
+  - 挑战（选做）：[洛谷 P2827 [NOIP 2016 提高组] 蚯蚓](https://www.luogu.com.cn/problem/P2827)（提高+/省选−，三个单调队列代替堆）；[洛谷 P1484 种树](https://www.luogu.com.cn/problem/P1484)（提高+/省选−，反悔贪心）
 
 ## 第 6 步：笔记与提交（约 0.5 小时）
 

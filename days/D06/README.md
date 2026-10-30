@@ -58,7 +58,9 @@ tools/test.sh ch03 D06
 - 课后习题（每题一个文件，打开后在“我的解答”下面写；编程题的代码写在同目录的同名 `.cpp` 里）：
   - 必做：无
   - 选做：[[3-1]](../../exercises/ch03/3-1.md)、[[3-2]](../../exercises/ch03/3-2.md)、[[3-3]](../../exercises/ch03/3-3.md)
-- LeetCode 206 反转链表、21 合并两个有序链表、141 环形链表。
+- OJ 题（在 [problems/README.md](../../problems/README.md) 里打勾；新建题目用 `python3 tools/new.py problem chNN luogu-P1234 题名`，样例测试用 `tools/run.sh`）：
+  - 必做：[力扣 19. 删除链表的倒数第 N 个结点](https://leetcode.cn/problems/remove-nth-node-from-end-of-list/)（中等，双指针 + 哨兵）；[力扣 141. 环形链表](https://leetcode.cn/problems/linked-list-cycle/)（简单，快慢指针）；[力扣 142. 环形链表 II](https://leetcode.cn/problems/linked-list-cycle-ii/)（中等，快慢指针求入口）；[洛谷 P1160 队列安排](https://www.luogu.com.cn/problem/P1160)（普及/提高−，双向链表的插入、删除）；[洛谷 P1996 约瑟夫问题](https://www.luogu.com.cn/problem/P1996)（普及−，循环链表）
+  - 热身（选做）：[力扣 206. 反转链表](https://leetcode.cn/problems/reverse-linked-list/)（简单）；[力扣 203. 移除链表元素](https://leetcode.cn/problems/remove-linked-list-elements/)（简单，哨兵）；[力扣 21. 合并两个有序链表](https://leetcode.cn/problems/merge-two-sorted-lists/)（简单）
 
 ## 第 6 步：笔记与提交（约 0.5 小时）
 

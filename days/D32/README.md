@@ -54,7 +54,9 @@ tools/test.sh ch11 D32
 - 课后习题（每题一个文件，打开后在“我的解答”下面写；编程题的代码写在同目录的同名 `.cpp` 里）：
   - 必做：[[11-4]](../../exercises/ch11/11-4.md)、[[11-5]](../../exercises/ch11/11-5.md)
   - 选做：无
-- 洛谷 P4391 无线传输（next 表的应用）。
+- OJ 题（在 [problems/README.md](../../problems/README.md) 里打勾；新建题目用 `python3 tools/new.py problem chNN luogu-P1234 题名`，样例测试用 `tools/run.sh`）：
+  - 必做：[洛谷 P4391 [BalticOI 2009] Radio Transmission 无线传输](https://www.luogu.com.cn/problem/P4391)（普及+/提高，next 表）；[洛谷 P2375 [NOI2014] 动物园](https://www.luogu.com.cn/problem/P2375)（提高+/省选−，next 表）；[洛谷 P4824 [USACO15FEB] Censoring S](https://www.luogu.com.cn/problem/P4824)（提高+/省选−，KMP + 栈）；[洛谷 P3435 [POI 2006] OKR-Periods of Words](https://www.luogu.com.cn/problem/P3435)（提高+/省选−，next 表）
+  - 挑战（选做）：[力扣 214. 最短回文串](https://leetcode.cn/problems/shortest-palindrome/)（困难）；[力扣 1392. 最长快乐前缀](https://leetcode.cn/problems/longest-happy-prefix/)（困难）
 
 ## 第 6 步：笔记与提交（约 0.5 小时）
 

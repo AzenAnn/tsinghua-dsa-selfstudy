@@ -63,7 +63,9 @@ DSA_STRICT=1 tools/test.sh ch11
   - 必做：[[11-6]](../../exercises/ch11/11-6.md)、[[11-7]](../../exercises/ch11/11-7.md)、[[11-8]](../../exercises/ch11/11-8.md)
   - 选做：无
 - 今天是第11章的最后一天：打开 [`exercises/ch11/README.md`](../../exercises/ch11/README.md)，把本章前几天没做完的必做题补上。
-- LeetCode 459 重复的子字符串、187 重复的 DNA 序列（Karp-Rabin）。
+- OJ 题（在 [problems/README.md](../../problems/README.md) 里打勾；新建题目用 `python3 tools/new.py problem chNN luogu-P1234 题名`，样例测试用 `tools/run.sh`）：
+  - 必做：[力扣 187. 重复的DNA序列](https://leetcode.cn/problems/repeated-dna-sequences/)（中等，Karp-Rabin）；[力扣 1044. 最长重复子串](https://leetcode.cn/problems/longest-duplicate-substring/)（困难，二分 + Karp-Rabin）
+  - 挑战（选做）：[洛谷 P3193 [HNOI2008] GT考试](https://www.luogu.com.cn/problem/P3193)（省选/NOI−，KMP + 矩阵快速幂）；[CF 126B Password](https://codeforces.com/problemset/problem/126/B)（CF 1700，next 表）
 
 ## 第 6 步：笔记与提交（约 0.5 小时）
 

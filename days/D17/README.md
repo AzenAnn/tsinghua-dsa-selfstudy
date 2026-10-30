@@ -59,7 +59,9 @@ DSA_STRICT=1 tools/test.sh ch06
   - 必做：[[6-18]](../../exercises/ch06/6-18.md)、[[6-21]](../../exercises/ch06/6-21.md)、[[6-22]](../../exercises/ch06/6-22.md)、[[6-24]](../../exercises/ch06/6-24.md)、[[6-25]](../../exercises/ch06/6-25.md)、[[6-27]](../../exercises/ch06/6-27.md)、[[6-28]](../../exercises/ch06/6-28.md)、[[6-30]](../../exercises/ch06/6-30.md)、[[6-32]](../../exercises/ch06/6-32.md)
   - 选做：[[6-17]](../../exercises/ch06/6-17.md)、[[6-23]](../../exercises/ch06/6-23.md)、[[6-26]](../../exercises/ch06/6-26.md)、[[6-29]](../../exercises/ch06/6-29.md)、[[6-31]](../../exercises/ch06/6-31.md)
 - 今天是第6章的最后一天：打开 [`exercises/ch06/README.md`](../../exercises/ch06/README.md)，把本章前几天没做完的必做题补上。
-- 洛谷 P3366 最小生成树、P4779 单源最短路径；LeetCode 743。
+- OJ 题（在 [problems/README.md](../../problems/README.md) 里打勾；新建题目用 `python3 tools/new.py problem chNN luogu-P1234 题名`，样例测试用 `tools/run.sh`）：
+  - 必做：[洛谷 P3366 【模板】最小生成树](https://www.luogu.com.cn/problem/P3366)（普及/提高−，Prim）；[洛谷 P4779 【模板】单源最短路径（标准版）](https://www.luogu.com.cn/problem/P4779)（普及/提高−，Dijkstra + 堆）；[力扣 743. 网络延迟时间](https://leetcode.cn/problems/network-delay-time/)（中等）；[力扣 1631. 最小体力消耗路径](https://leetcode.cn/problems/path-with-minimum-effort/)（中等）；[洛谷 P1396 营救](https://www.luogu.com.cn/problem/P1396)（普及/提高−，瓶颈路）；[洛谷 P1119 灾后重建](https://www.luogu.com.cn/problem/P1119)（普及+/提高，Floyd 的本质）
+  - 挑战（选做）：[洛谷 P2865 [USACO06NOV] Roadblocks G](https://www.luogu.com.cn/problem/P2865)（提高+/省选−，次短路）；[洛谷 P4568 [JLOI2011] 飞行路线](https://www.luogu.com.cn/problem/P4568)（普及+/提高，分层图）；[洛谷 P3008 [USACO11JAN] Roads and Planes G](https://www.luogu.com.cn/problem/P3008)（提高+/省选−，负权边 + 拓扑 + Dijkstra）；[力扣 787. K 站中转内最便宜的航班](https://leetcode.cn/problems/cheapest-flights-within-k-stops/)（中等）
 
 ## 第 6 步：笔记与提交（约 0.5 小时）
 

@@ -63,7 +63,10 @@ tools/test.sh ch09 D27
 - 课后习题（每题一个文件，打开后在“我的解答”下面写；编程题的代码写在同目录的同名 `.cpp` 里）：
   - 必做：[[9-18]](../../exercises/ch09/9-18.md)、[[9-19]](../../exercises/ch09/9-19.md)
   - 选做：[[9-20]](../../exercises/ch09/9-20.md)
-- LeetCode 705、706、1；洛谷 P3370 字符串哈希。
+- OJ 题（在 [problems/README.md](../../problems/README.md) 里打勾；新建题目用 `python3 tools/new.py problem chNN luogu-P1234 题名`，样例测试用 `tools/run.sh`）：
+  - 必做：[力扣 49. 字母异位词分组](https://leetcode.cn/problems/group-anagrams/)（中等）；[力扣 128. 最长连续序列](https://leetcode.cn/problems/longest-consecutive-sequence/)（中等）；[力扣 560. 和为 K 的子数组](https://leetcode.cn/problems/subarray-sum-equals-k/)（中等，前缀和 + 散列）；[洛谷 P3370 【模板】字符串哈希](https://www.luogu.com.cn/problem/P3370)（普及−）；[洛谷 P1102 A-B 数对](https://www.luogu.com.cn/problem/P1102)（普及−）；[洛谷 P4305 [JLOI2011] 不重复数字](https://www.luogu.com.cn/problem/P4305)（普及−）；[洛谷 P3405 [USACO16DEC] Cities and States S](https://www.luogu.com.cn/problem/P3405)（普及−）
+  - 热身（选做）：[力扣 1. 两数之和](https://leetcode.cn/problems/two-sum/)（简单）；[力扣 705. 设计哈希集合](https://leetcode.cn/problems/design-hashset/)（简单）；[力扣 706. 设计哈希映射](https://leetcode.cn/problems/design-hashmap/)（简单）
+  - 挑战（选做）：[洛谷 P1381 单词背诵](https://www.luogu.com.cn/problem/P1381)（普及+/提高，散列 + 双指针）；[洛谷 P1955 [NOI2015] 程序自动分析](https://www.luogu.com.cn/problem/P1955)（普及+/提高，离散化 + 并查集）；[CF 4C Registration System](https://codeforces.com/problemset/problem/4/C)（CF 1300）
 
 ## 第 6 步：笔记与提交（约 0.5 小时）
 

@@ -60,7 +60,9 @@ tools/test.sh ch02 D04
 - 课后习题（每题一个文件，打开后在“我的解答”下面写；编程题的代码写在同目录的同名 `.cpp` 里）：
   - 必做：[[2-4]](../../exercises/ch02/2-4.md)、[[2-5]](../../exercises/ch02/2-5.md)、[[2-6]](../../exercises/ch02/2-6.md)、[[2-9]](../../exercises/ch02/2-9.md)、[[2-11]](../../exercises/ch02/2-11.md)、[[2-12]](../../exercises/ch02/2-12.md)
   - 选做：[[2-7]](../../exercises/ch02/2-7.md)、[[2-8]](../../exercises/ch02/2-8.md)、[[2-10]](../../exercises/ch02/2-10.md)
-- LeetCode 27 移除元素：用“区间删除”的思路，一趟扫描完成。
+- OJ 题（在 [problems/README.md](../../problems/README.md) 里打勾；新建题目用 `python3 tools/new.py problem chNN luogu-P1234 题名`，样例测试用 `tools/run.sh`）：
+  - 必做：[力扣 283. 移动零](https://leetcode.cn/problems/move-zeroes/)（简单，就地、一趟）；[力扣 189. 轮转数组](https://leetcode.cn/problems/rotate-array/)（中等，三次倒置）
+  - 热身（选做）：[力扣 27. 移除元素](https://leetcode.cn/problems/remove-element/)（简单，区间删除的思路）
 
 ## 第 6 步：笔记与提交（约 0.5 小时）
 

@@ -56,7 +56,9 @@ tools/test.sh ch07 D19
 - 课后习题（每题一个文件，打开后在“我的解答”下面写；编程题的代码写在同目录的同名 `.cpp` 里）：
   - 必做：[[7-1]](../../exercises/ch07/7-1.md)、[[7-2]](../../exercises/ch07/7-2.md)、[[7-3]](../../exercises/ch07/7-3.md)、[[7-4]](../../exercises/ch07/7-4.md)、[[7-5]](../../exercises/ch07/7-5.md)、[[7-11]](../../exercises/ch07/7-11.md)、[[7-12]](../../exercises/ch07/7-12.md)、[[7-13]](../../exercises/ch07/7-13.md)
   - 选做：[[7-10]](../../exercises/ch07/7-10.md)
-- LeetCode 98、701、450。
+- OJ 题（在 [problems/README.md](../../problems/README.md) 里打勾；新建题目用 `python3 tools/new.py problem chNN luogu-P1234 题名`，样例测试用 `tools/run.sh`）：
+  - 必做：[力扣 450. 删除二叉搜索树中的节点](https://leetcode.cn/problems/delete-node-in-a-bst/)（中等，removeAt）；[力扣 230. 二叉搜索树中第 K 小的元素](https://leetcode.cn/problems/kth-smallest-element-in-a-bst/)（中等）；[力扣 235. 二叉搜索树的最近公共祖先](https://leetcode.cn/problems/lowest-common-ancestor-of-a-binary-search-tree/)（中等）；[洛谷 P5076 【深基16.例7】普通二叉树（简化版）](https://www.luogu.com.cn/problem/P5076)（普及+/提高）
+  - 热身（选做）：[力扣 700. 二叉搜索树中的搜索](https://leetcode.cn/problems/search-in-a-binary-search-tree/)（简单）；[力扣 701. 二叉搜索树中的插入操作](https://leetcode.cn/problems/insert-into-a-binary-search-tree/)（中等）；[力扣 98. 验证二叉搜索树](https://leetcode.cn/problems/validate-binary-search-tree/)（中等）
 
 ## 第 6 步：笔记与提交（约 0.5 小时）
 

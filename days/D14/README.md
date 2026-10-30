@@ -58,6 +58,8 @@ tools/test.sh ch06 D14
 - 课后习题（每题一个文件，打开后在“我的解答”下面写；编程题的代码写在同目录的同名 `.cpp` 里）：
   - 必做：[[6-1]](../../exercises/ch06/6-1.md)、[[6-3]](../../exercises/ch06/6-3.md)、[[6-5]](../../exercises/ch06/6-5.md)、[[6-6]](../../exercises/ch06/6-6.md)、[[6-7]](../../exercises/ch06/6-7.md)、[[6-8]](../../exercises/ch06/6-8.md)、[[6-10]](../../exercises/ch06/6-10.md)
   - 选做：[[6-2]](../../exercises/ch06/6-2.md)、[[6-4]](../../exercises/ch06/6-4.md)、[[6-9]](../../exercises/ch06/6-9.md)
+- OJ 题（在 [problems/README.md](../../problems/README.md) 里打勾；新建题目用 `python3 tools/new.py problem chNN luogu-P1234 题名`，样例测试用 `tools/run.sh`）：
+  - 热身（选做）：[力扣 997. 找到小镇的法官](https://leetcode.cn/problems/find-the-town-judge/)（简单，入度、出度）
 
 ## 第 6 步：笔记与提交（约 0.5 小时）
 

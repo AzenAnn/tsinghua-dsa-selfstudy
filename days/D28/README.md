@@ -56,7 +56,9 @@ DSA_STRICT=1 tools/test.sh ch09
   - 必做：[[9-22]](../../exercises/ch09/9-22.md)、[[9-23]](../../exercises/ch09/9-23.md)、[[9-24]](../../exercises/ch09/9-24.md)、[[9-25]](../../exercises/ch09/9-25.md)、[[9-26]](../../exercises/ch09/9-26.md)
   - 选做：[[9-21]](../../exercises/ch09/9-21.md)
 - 今天是第9章的最后一天：打开 [`exercises/ch09/README.md`](../../exercises/ch09/README.md)，把本章前几天没做完的必做题补上。
-- LeetCode 164 最大间距；洛谷 P1177 用基数排序过一次。
+- OJ 题（在 [problems/README.md](../../problems/README.md) 里打勾；新建题目用 `python3 tools/new.py problem chNN luogu-P1234 题名`，样例测试用 `tools/run.sh`）：
+  - 必做：[力扣 164. 最大间距](https://leetcode.cn/problems/maximum-gap/)（中等，桶）；[洛谷 P1177 【模板】排序](https://www.luogu.com.cn/problem/P1177)（普及−，用基数排序交一次）
+  - 热身（选做）：[洛谷 P1271 【深基9.例1】选举学生会](https://www.luogu.com.cn/problem/P1271)（普及−，计数排序）
 
 ## 第 6 步：笔记与提交（约 0.5 小时）
 

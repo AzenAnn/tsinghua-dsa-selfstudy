@@ -57,7 +57,9 @@ tools/test.sh ch12 D35
 - 课后习题（每题一个文件，打开后在“我的解答”下面写；编程题的代码写在同目录的同名 `.cpp` 里）：
   - 必做：[[12-6]](../../exercises/ch12/12-6.md)、[[12-7]](../../exercises/ch12/12-7.md)、[[12-8]](../../exercises/ch12/12-8.md)、[[12-10]](../../exercises/ch12/12-10.md)、[[12-12]](../../exercises/ch12/12-12.md)、[[12-13]](../../exercises/ch12/12-13.md)、[[12-14]](../../exercises/ch12/12-14.md)
   - 选做：[[12-2]](../../exercises/ch12/12-2.md)、[[12-3]](../../exercises/ch12/12-3.md)、[[12-4]](../../exercises/ch12/12-4.md)、[[12-5]](../../exercises/ch12/12-5.md)、[[12-9]](../../exercises/ch12/12-9.md)、[[12-11]](../../exercises/ch12/12-11.md)
-- 洛谷 P1923 求第 k 小的数；LeetCode 169、215、4。
+- OJ 题（在 [problems/README.md](../../problems/README.md) 里打勾；新建题目用 `python3 tools/new.py problem chNN luogu-P1234 题名`，样例测试用 `tools/run.sh`）：
+  - 必做：[洛谷 P1923 【深基9.例4】求第 k 小的数](https://www.luogu.com.cn/problem/P1923)（普及−，quickSelect）；[力扣 229. 多数元素 II](https://leetcode.cn/problems/majority-element-ii/)（中等）；[力扣 4. 寻找两个正序数组的中位数](https://leetcode.cn/problems/median-of-two-sorted-arrays/)（困难）；[力扣 324. 摆动排序 II](https://leetcode.cn/problems/wiggle-sort-ii/)（中等，选取 + 三路划分）
+  - 热身（选做）：[力扣 169. 多数元素](https://leetcode.cn/problems/majority-element/)（简单，摩尔投票）；[洛谷 P1138 第 k 小整数](https://www.luogu.com.cn/problem/P1138)（普及−）
 
 ## 第 6 步：笔记与提交（约 0.5 小时）
 

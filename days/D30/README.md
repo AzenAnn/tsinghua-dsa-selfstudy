@@ -58,7 +58,9 @@ DSA_STRICT=1 tools/test.sh ch10
   - 必做：[[10-13]](../../exercises/ch10/10-13.md)、[[10-15]](../../exercises/ch10/10-15.md)、[[10-16]](../../exercises/ch10/10-16.md)、[[10-17]](../../exercises/ch10/10-17.md)、[[10-18]](../../exercises/ch10/10-18.md)
   - 选做：[[10-19]](../../exercises/ch10/10-19.md)、[[10-20]](../../exercises/ch10/10-20.md)、[[10-21]](../../exercises/ch10/10-21.md)、[[10-22]](../../exercises/ch10/10-22.md)
 - 今天是第10章的最后一天：打开 [`exercises/ch10/README.md`](../../exercises/ch10/README.md)，把本章前几天没做完的必做题补上。
-- 洛谷 P3377 左偏树、P1456 Monkey King；LeetCode 23。
+- OJ 题（在 [problems/README.md](../../problems/README.md) 里打勾；新建题目用 `python3 tools/new.py problem chNN luogu-P1234 题名`，样例测试用 `tools/run.sh`）：
+  - 必做：[力扣 23. 合并 K 个升序链表](https://leetcode.cn/problems/merge-k-sorted-lists/)（困难）；[洛谷 P3377 【模板】可并堆 1](https://www.luogu.com.cn/problem/P3377)（提高+/省选−）；[洛谷 P1456 Monkey King](https://www.luogu.com.cn/problem/P1456)（提高+/省选−，左式堆）
+  - 挑战（选做）：[洛谷 P4331 [BalticOI 2004] Sequence (Day1)](https://www.luogu.com.cn/problem/P4331)（NOI/NOI+/CTSC，左式堆）
 
 ## 第 6 步：笔记与提交（约 0.5 小时）
 

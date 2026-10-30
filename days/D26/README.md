@@ -56,7 +56,8 @@ tools/test.sh ch09 D26
 - 课后习题（每题一个文件，打开后在“我的解答”下面写；编程题的代码写在同目录的同名 `.cpp` 里）：
   - 必做：[[9-1]](../../exercises/ch09/9-1.md)、[[9-2]](../../exercises/ch09/9-2.md)、[[9-6]](../../exercises/ch09/9-6.md)、[[9-8]](../../exercises/ch09/9-8.md)、[[9-9]](../../exercises/ch09/9-9.md)、[[9-10]](../../exercises/ch09/9-10.md)、[[9-11]](../../exercises/ch09/9-11.md)、[[9-13]](../../exercises/ch09/9-13.md)、[[9-14]](../../exercises/ch09/9-14.md)、[[9-16]](../../exercises/ch09/9-16.md)、[[9-17]](../../exercises/ch09/9-17.md)
   - 选做：[[9-3]](../../exercises/ch09/9-3.md)、[[9-4]](../../exercises/ch09/9-4.md)、[[9-5]](../../exercises/ch09/9-5.md)、[[9-7]](../../exercises/ch09/9-7.md)、[[9-12]](../../exercises/ch09/9-12.md)、[[9-15]](../../exercises/ch09/9-15.md)
-- LeetCode 1206 设计跳表。
+- OJ 题（在 [problems/README.md](../../problems/README.md) 里打勾；新建题目用 `python3 tools/new.py problem chNN luogu-P1234 题名`，样例测试用 `tools/run.sh`）：
+  - 必做：[力扣 1206. 设计跳表](https://leetcode.cn/problems/design-skiplist/)（困难）
 
 ## 第 6 步：笔记与提交（约 0.5 小时）
 

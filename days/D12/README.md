@@ -58,7 +58,10 @@ DSA_STRICT=1 tools/test.sh ch05_bintree
 - 课后习题（每题一个文件，打开后在“我的解答”下面写；编程题的代码写在同目录的同名 `.cpp` 里）：
   - 必做：[[5-6]](../../exercises/ch05/5-6.md)、[[5-8]](../../exercises/ch05/5-8.md)、[[5-9]](../../exercises/ch05/5-9.md)、[[5-10]](../../exercises/ch05/5-10.md)、[[5-11]](../../exercises/ch05/5-11.md)、[[5-12]](../../exercises/ch05/5-12.md)、[[5-14]](../../exercises/ch05/5-14.md)、[[5-15]](../../exercises/ch05/5-15.md)、[[5-16]](../../exercises/ch05/5-16.md)、[[5-18]](../../exercises/ch05/5-18.md)
   - 选做：[[5-5]](../../exercises/ch05/5-5.md)、[[5-7]](../../exercises/ch05/5-7.md)、[[5-13]](../../exercises/ch05/5-13.md)、[[5-17]](../../exercises/ch05/5-17.md)
-- LeetCode 144 / 94 / 145（用迭代写）、102、105、889；洛谷 P1030 求先序排列。
+- OJ 题（在 [problems/README.md](../../problems/README.md) 里打勾；新建题目用 `python3 tools/new.py problem chNN luogu-P1234 题名`，样例测试用 `tools/run.sh`）：
+  - 必做：[力扣 105. 从前序与中序遍历序列构造二叉树](https://leetcode.cn/problems/construct-binary-tree-from-preorder-and-inorder-traversal/)（中等）；[力扣 106. 从中序与后序遍历序列构造二叉树](https://leetcode.cn/problems/construct-binary-tree-from-inorder-and-postorder-traversal/)（中等）；[力扣 889. 根据前序和后序遍历构造二叉树](https://leetcode.cn/problems/construct-binary-tree-from-preorder-and-postorder-traversal/)（中等，真二叉树）；[洛谷 P1030 [NOIP 2001 普及组] 求先序排列](https://www.luogu.com.cn/problem/P1030)（普及−）；[洛谷 P1827 [USACO3.4] 美国血统 American Heritage](https://www.luogu.com.cn/problem/P1827)（普及−）；[洛谷 P1229 遍历问题](https://www.luogu.com.cn/problem/P1229)（普及/提高−，先序 + 后序时的可能数）
+  - 热身（选做）：[力扣 144. 二叉树的前序遍历](https://leetcode.cn/problems/binary-tree-preorder-traversal/)（简单，用迭代写）；[力扣 94. 二叉树的中序遍历](https://leetcode.cn/problems/binary-tree-inorder-traversal/)（简单，用迭代写）；[力扣 145. 二叉树的后序遍历](https://leetcode.cn/problems/binary-tree-postorder-traversal/)（简单，用迭代写）；[力扣 102. 二叉树的层序遍历](https://leetcode.cn/problems/binary-tree-level-order-traversal/)（中等）
+  - 挑战（选做）：[力扣 297. 二叉树的序列化与反序列化](https://leetcode.cn/problems/serialize-and-deserialize-binary-tree/)（困难）；[力扣 124. 二叉树中的最大路径和](https://leetcode.cn/problems/binary-tree-maximum-path-sum/)（困难）
 
 ## 第 6 步：笔记与提交（约 0.5 小时）
 

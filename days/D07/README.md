@@ -59,7 +59,9 @@ DSA_STRICT=1 tools/test.sh ch03
   - 必做：[[3-4]](../../exercises/ch03/3-4.md)、[[3-5]](../../exercises/ch03/3-5.md)、[[3-6]](../../exercises/ch03/3-6.md)、[[3-8]](../../exercises/ch03/3-8.md)、[[3-9]](../../exercises/ch03/3-9.md)、[[3-10]](../../exercises/ch03/3-10.md)、[[3-11]](../../exercises/ch03/3-11.md)、[[3-13]](../../exercises/ch03/3-13.md)、[[3-14]](../../exercises/ch03/3-14.md)、[[3-16]](../../exercises/ch03/3-16.md)、[[3-17]](../../exercises/ch03/3-17.md)、[[3-18]](../../exercises/ch03/3-18.md)、[[3-19]](../../exercises/ch03/3-19.md)
   - 选做：[[3-7]](../../exercises/ch03/3-7.md)、[[3-12]](../../exercises/ch03/3-12.md)、[[3-15]](../../exercises/ch03/3-15.md)
 - 今天是第3章的最后一天：打开 [`exercises/ch03/README.md`](../../exercises/ch03/README.md)，把本章前几天没做完的必做题补上。
-- LeetCode 148 排序链表（用归并）、146 LRU 缓存（哈希表 + 双向链表）。
+- OJ 题（在 [problems/README.md](../../problems/README.md) 里打勾；新建题目用 `python3 tools/new.py problem chNN luogu-P1234 题名`，样例测试用 `tools/run.sh`）：
+  - 必做：[力扣 148. 排序链表](https://leetcode.cn/problems/sort-list/)（中等，列表归并排序）；[力扣 146. LRU 缓存](https://leetcode.cn/problems/lru-cache/)（中等，哈希 + 双向链表）；[力扣 25. K 个一组翻转链表](https://leetcode.cn/problems/reverse-nodes-in-k-group/)（困难）
+  - 挑战（选做）：[力扣 460. LFU 缓存](https://leetcode.cn/problems/lfu-cache/)（困难）；[洛谷 P7912 [CSP-J 2021] 小熊的果篮](https://www.luogu.com.cn/problem/P7912)（普及+/提高，链表维护块）
 
 ## 第 6 步：笔记与提交（约 0.5 小时）
 

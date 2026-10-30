@@ -57,7 +57,9 @@ tools/test.sh ch11 D31
 - 课后习题（每题一个文件，打开后在“我的解答”下面写；编程题的代码写在同目录的同名 `.cpp` 里）：
   - 必做：[[11-9]](../../exercises/ch11/11-9.md)
   - 选做：[[11-1]](../../exercises/ch11/11-1.md)、[[11-2]](../../exercises/ch11/11-2.md)、[[11-3]](../../exercises/ch11/11-3.md)、[[11-10]](../../exercises/ch11/11-10.md)
-- LeetCode 28；洛谷 P3375 KMP 字符串匹配。
+- OJ 题（在 [problems/README.md](../../problems/README.md) 里打勾；新建题目用 `python3 tools/new.py problem chNN luogu-P1234 题名`，样例测试用 `tools/run.sh`）：
+  - 必做：[洛谷 P3375 【模板】KMP](https://www.luogu.com.cn/problem/P3375)（普及+/提高）；[力扣 459. 重复的子字符串](https://leetcode.cn/problems/repeated-substring-pattern/)（简单，next 表）
+  - 热身（选做）：[力扣 28. 找出字符串中第一个匹配项的下标](https://leetcode.cn/problems/find-the-index-of-the-first-occurrence-in-a-string/)（简单，KMP、BM 各交一次）；[力扣 796. 旋转字符串](https://leetcode.cn/problems/rotate-string/)（简单）
 
 ## 第 6 步：笔记与提交（约 0.5 小时）
 

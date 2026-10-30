@@ -60,7 +60,9 @@ DSA_STRICT=1 tools/test.sh ch05
   - 必做：[[5-19]](../../exercises/ch05/5-19.md)、[[5-20]](../../exercises/ch05/5-20.md)、[[5-21]](../../exercises/ch05/5-21.md)、[[5-28]](../../exercises/ch05/5-28.md)、[[5-29]](../../exercises/ch05/5-29.md)、[[5-30]](../../exercises/ch05/5-30.md)
   - 选做：无
 - 今天是第5章的最后一天：打开 [`exercises/ch05/README.md`](../../exercises/ch05/README.md)，把本章前几天没做完的必做题补上。
-- 洛谷 P1090 合并果子（就是 Huffman 的 wpl）。
+- OJ 题（在 [problems/README.md](../../problems/README.md) 里打勾；新建题目用 `python3 tools/new.py problem chNN luogu-P1234 题名`，样例测试用 `tools/run.sh`）：
+  - 必做：[洛谷 P1090 [NOIP 2004 提高组] 合并果子](https://www.luogu.com.cn/problem/P1090)（普及/提高−，Huffman 的带权路径长度）
+  - 挑战（选做）：[洛谷 P2168 [NOI2015] 荷马史诗](https://www.luogu.com.cn/problem/P2168)（提高+/省选−，k 叉 Huffman）
 
 ## 第 6 步：笔记与提交（约 0.5 小时）
 

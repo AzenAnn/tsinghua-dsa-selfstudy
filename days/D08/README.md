@@ -59,7 +59,9 @@ tools/test.sh ch04_stack D08
 - 课后习题（每题一个文件，打开后在“我的解答”下面写；编程题的代码写在同目录的同名 `.cpp` 里）：
   - 必做：[[4-1]](../../exercises/ch04/4-1.md)、[[4-2]](../../exercises/ch04/4-2.md)、[[4-3]](../../exercises/ch04/4-3.md)、[[4-4]](../../exercises/ch04/4-4.md)
   - 选做：无
-- LeetCode 155 最小栈。
+- OJ 题（在 [problems/README.md](../../problems/README.md) 里打勾；新建题目用 `python3 tools/new.py problem chNN luogu-P1234 题名`，样例测试用 `tools/run.sh`）：
+  - 必做：[洛谷 P4387 【深基15.习9】验证栈序列](https://www.luogu.com.cn/problem/P4387)（普及/提高−，栈混洗判定）；[洛谷 P1044 [NOIP 2003 普及组] 栈](https://www.luogu.com.cn/problem/P1044)（普及−，栈混洗计数（Catalan））
+  - 热身（选做）：[力扣 232. 用栈实现队列](https://leetcode.cn/problems/implement-queue-using-stacks/)（简单）；[力扣 155. 最小栈](https://leetcode.cn/problems/min-stack/)（中等）
 
 ## 第 6 步：笔记与提交（约 0.5 小时）
 

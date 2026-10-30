@@ -60,7 +60,10 @@ DSA_STRICT=1 tools/test.sh ch07
   - 必做：[[7-6]](../../exercises/ch07/7-6.md)、[[7-9]](../../exercises/ch07/7-9.md)、[[7-14]](../../exercises/ch07/7-14.md)、[[7-15]](../../exercises/ch07/7-15.md)、[[7-17]](../../exercises/ch07/7-17.md)、[[7-20]](../../exercises/ch07/7-20.md)
   - 选做：[[7-7]](../../exercises/ch07/7-7.md)、[[7-8]](../../exercises/ch07/7-8.md)、[[7-16]](../../exercises/ch07/7-16.md)、[[7-18]](../../exercises/ch07/7-18.md)、[[7-19]](../../exercises/ch07/7-19.md)
 - 今天是第7章的最后一天：打开 [`exercises/ch07/README.md`](../../exercises/ch07/README.md)，把本章前几天没做完的必做题补上。
-- LeetCode 110；洛谷 P3369 普通平衡树（用你的 AVL）。
+- OJ 题（在 [problems/README.md](../../problems/README.md) 里打勾；新建题目用 `python3 tools/new.py problem chNN luogu-P1234 题名`，样例测试用 `tools/run.sh`）：
+  - 必做：[洛谷 P3369 【模板】普通平衡树](https://www.luogu.com.cn/problem/P3369)（省选/NOI−，用你的 AVL）；[力扣 1382. 将二叉搜索树变平衡](https://leetcode.cn/problems/balance-a-binary-search-tree/)（中等）；[洛谷 P2234 [HNOI2002] 营业额统计](https://www.luogu.com.cn/problem/P2234)（普及−，前驱后继）
+  - 热身（选做）：[力扣 110. 平衡二叉树](https://leetcode.cn/problems/balanced-binary-tree/)（简单）
+  - 挑战（选做）：[力扣 99. 恢复二叉搜索树](https://leetcode.cn/problems/recover-binary-search-tree/)（中等）；[洛谷 P1503 鬼子进村](https://www.luogu.com.cn/problem/P1503)（普及+/提高，前驱后继）
 
 ## 第 6 步：笔记与提交（约 0.5 小时）
 

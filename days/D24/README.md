@@ -53,7 +53,8 @@ tools/test.sh ch08_redblack D24
 
 ## 第 5 步：练习（约 1 小时）
 
-- 今天不做题。
+- OJ 题（在 [problems/README.md](../../problems/README.md) 里打勾；新建题目用 `python3 tools/new.py problem chNN luogu-P1234 题名`，样例测试用 `tools/run.sh`）：
+  - 必做：[洛谷 P2286 [HNOI2004] 宠物收养场](https://www.luogu.com.cn/problem/P2286)（普及/提高−，平衡树前驱后继）
 
 ## 第 6 步：笔记与提交（约 0.5 小时）
 

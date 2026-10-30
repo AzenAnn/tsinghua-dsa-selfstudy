@@ -69,7 +69,10 @@ DSA_STRICT=1 tools/test.sh ch01
   - 必做：[[1-14]](../../exercises/ch01/1-14.md)、[[1-15]](../../exercises/ch01/1-15.md)、[[1-16]](../../exercises/ch01/1-16.md)、[[1-17]](../../exercises/ch01/1-17.md)、[[1-19]](../../exercises/ch01/1-19.md)、[[1-20]](../../exercises/ch01/1-20.md)、[[1-22]](../../exercises/ch01/1-22.md)、[[1-23]](../../exercises/ch01/1-23.md)、[[1-24]](../../exercises/ch01/1-24.md)、[[1-25]](../../exercises/ch01/1-25.md)、[[1-26]](../../exercises/ch01/1-26.md)、[[1-27]](../../exercises/ch01/1-27.md)、[[1-28]](../../exercises/ch01/1-28.md)、[[1-29]](../../exercises/ch01/1-29.md)
   - 选做：[[1-18]](../../exercises/ch01/1-18.md)、[[1-21]](../../exercises/ch01/1-21.md)、[[1-30]](../../exercises/ch01/1-30.md)、[[1-31]](../../exercises/ch01/1-31.md)、[[1-32]](../../exercises/ch01/1-32.md)
 - 今天是第1章的最后一天：打开 [`exercises/ch01/README.md`](../../exercises/ch01/README.md)，把本章前几天没做完的必做题补上。
-- OJ：problems/README.md 里第1章的 4 道题，用 `python3 tools/new.py problem ch01 leetcode-509 斐波那契数` 建目录，样例存成 `1.in`/`1.out`，再用 `tools/run.sh problems/ch01/leetcode-509-斐波那契数` 测。
+- OJ 题（在 [problems/README.md](../../problems/README.md) 里打勾；新建题目用 `python3 tools/new.py problem chNN luogu-P1234 题名`，样例测试用 `tools/run.sh`）：
+  - 必做：[洛谷 P1029 [NOIP 2001 普及组] 最大公约数和最小公倍数问题](https://www.luogu.com.cn/problem/P1029)（普及−，gcd）；[洛谷 P1464 [PacNW 1999] Function](https://www.luogu.com.cn/problem/P1464)（普及−，记忆化递归）；[洛谷 P1255 数楼梯](https://www.luogu.com.cn/problem/P1255)（普及−，Fibonacci + 高精度）；[力扣 1143. 最长公共子序列](https://leetcode.cn/problems/longest-common-subsequence/)（中等，lcsI）
+  - 热身（选做）：[力扣 509. 斐波那契数](https://leetcode.cn/problems/fibonacci-number/)（简单，三种写法都交一次）；[力扣 70. 爬楼梯](https://leetcode.cn/problems/climbing-stairs/)（简单，递推）
+  - 挑战（选做）：[洛谷 P1439 两个排列的最长公共子序列](https://www.luogu.com.cn/problem/P1439)（普及+/提高，排列的 LCS 转 LIS，O(n log n)）；[洛谷 P1962 斐波那契数列](https://www.luogu.com.cn/problem/P1962)（普及+/提高，矩阵快速幂）；[洛谷 P1939 矩阵加速（数列）](https://www.luogu.com.cn/problem/P1939)（普及+/提高，矩阵快速幂）
 
 ## 第 6 步：笔记与提交（约 0.5 小时）
 

@@ -61,7 +61,10 @@ DSA_STRICT=1 tools/test.sh ch04
   - 必做：[[4-16]](../../exercises/ch04/4-16.md)、[[4-18]](../../exercises/ch04/4-18.md)、[[4-19]](../../exercises/ch04/4-19.md)、[[4-22]](../../exercises/ch04/4-22.md)、[[4-23]](../../exercises/ch04/4-23.md)、[[4-24]](../../exercises/ch04/4-24.md)、[[4-25]](../../exercises/ch04/4-25.md)、[[4-26]](../../exercises/ch04/4-26.md)
   - 选做：[[4-17]](../../exercises/ch04/4-17.md)、[[4-20]](../../exercises/ch04/4-20.md)、[[4-21]](../../exercises/ch04/4-21.md)
 - 今天是第4章的最后一天：打开 [`exercises/ch04/README.md`](../../exercises/ch04/README.md)，把本章前几天没做完的必做题补上。
-- LeetCode 51 N 皇后、622 设计循环队列、84 柱状图中最大的矩形。
+- OJ 题（在 [problems/README.md](../../problems/README.md) 里打勾；新建题目用 `python3 tools/new.py problem chNN luogu-P1234 题名`，样例测试用 `tools/run.sh`）：
+  - 必做：[力扣 51. N 皇后](https://leetcode.cn/problems/n-queens/)（困难）；[力扣 622. 设计循环队列](https://leetcode.cn/problems/design-circular-queue/)（中等）；[洛谷 P1886 【模板】单调队列 / 滑动窗口](https://www.luogu.com.cn/problem/P1886)（普及/提高−，单调队列）
+  - 热身（选做）：[洛谷 P1219 [USACO1.5] 八皇后 Checker Challenge](https://www.luogu.com.cn/problem/P1219)（普及/提高−，回溯）；[洛谷 P1605 迷宫](https://www.luogu.com.cn/problem/P1605)（普及−，回溯）
+  - 挑战（选做）：[洛谷 P2216 [HAOI2007] 理想的正方形](https://www.luogu.com.cn/problem/P2216)（普及+/提高，二维单调队列）；[洛谷 P1725 琪露诺](https://www.luogu.com.cn/problem/P1725)（普及+/提高，单调队列优化 DP）
 
 ## 第 6 步：笔记与提交（约 0.5 小时）
 

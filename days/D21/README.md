@@ -57,7 +57,9 @@ tools/test.sh ch08_splay
 - 课后习题（每题一个文件，打开后在“我的解答”下面写；编程题的代码写在同目录的同名 `.cpp` 里）：
   - 必做：[[8-2]](../../exercises/ch08/8-2.md)
   - 选做：[[8-1]](../../exercises/ch08/8-1.md)
-- 洛谷 P3369 用伸展树再过一次；P3391 文艺平衡树。
+- OJ 题（在 [problems/README.md](../../problems/README.md) 里打勾；新建题目用 `python3 tools/new.py problem chNN luogu-P1234 题名`，样例测试用 `tools/run.sh`）：
+  - 必做：[洛谷 P3391 【模板】文艺平衡树](https://www.luogu.com.cn/problem/P3391)（省选/NOI−，伸展树区间翻转）
+  - 挑战（选做）：[洛谷 P2042 [NOI2005] 维护数列](https://www.luogu.com.cn/problem/P2042)（NOI/NOI+/CTSC，伸展树综合）
 
 ## 第 6 步：笔记与提交（约 0.5 小时）
 

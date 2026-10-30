@@ -61,7 +61,9 @@ tools/test.sh ch12 D34
 - 课后习题（每题一个文件，打开后在“我的解答”下面写；编程题的代码写在同目录的同名 `.cpp` 里）：
   - 必做：[[12-1]](../../exercises/ch12/12-1.md)
   - 选做：无
-- 洛谷 P1177 快速排序；LeetCode 75 颜色分类（三路划分）。
+- OJ 题（在 [problems/README.md](../../problems/README.md) 里打勾；新建题目用 `python3 tools/new.py problem chNN luogu-P1234 题名`，样例测试用 `tools/run.sh`）：
+  - 必做：[力扣 75. 颜色分类](https://leetcode.cn/problems/sort-colors/)（中等，三路划分）
+  - 热身（选做）：[力扣 912. 排序数组](https://leetcode.cn/problems/sort-an-array/)（中等，用快排交，注意大量重复）
 
 ## 第 6 步：笔记与提交（约 0.5 小时）
 

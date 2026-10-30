@@ -56,7 +56,9 @@ tools/test.sh ch06 D15
 - 课后习题（每题一个文件，打开后在“我的解答”下面写；编程题的代码写在同目录的同名 `.cpp` 里）：
   - 必做：[[6-12]](../../exercises/ch06/6-12.md)、[[6-13]](../../exercises/ch06/6-13.md)、[[6-14]](../../exercises/ch06/6-14.md)
   - 选做：[[6-11]](../../exercises/ch06/6-11.md)、[[6-15]](../../exercises/ch06/6-15.md)、[[6-16]](../../exercises/ch06/6-16.md)
-- 洛谷 P5318 查找文献；LeetCode 200 岛屿数量。
+- OJ 题（在 [problems/README.md](../../problems/README.md) 里打勾；新建题目用 `python3 tools/new.py problem chNN luogu-P1234 题名`，样例测试用 `tools/run.sh`）：
+  - 必做：[洛谷 P5318 【深基18.例3】查找文献](https://www.luogu.com.cn/problem/P5318)（普及−，BFS、DFS）；[洛谷 P3916 图的遍历](https://www.luogu.com.cn/problem/P3916)（普及/提高−，反向建图）；[力扣 200. 岛屿数量](https://leetcode.cn/problems/number-of-islands/)（中等）；[力扣 994. 腐烂的橘子](https://leetcode.cn/problems/rotting-oranges/)（中等，多源 BFS）；[洛谷 P1135 奇怪的电梯](https://www.luogu.com.cn/problem/P1135)（普及/提高−，BFS）
+  - 挑战（选做）：[洛谷 P1144 最短路计数](https://www.luogu.com.cn/problem/P1144)（普及+/提高，BFS 计数）
 
 ## 第 6 步：笔记与提交（约 0.5 小时）
 

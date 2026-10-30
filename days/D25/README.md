@@ -59,7 +59,9 @@ DSA_STRICT=1 tools/test.sh ch08
   - 必做：[[8-6]](../../exercises/ch08/8-6.md)、[[8-16]](../../exercises/ch08/8-16.md)、[[8-19]](../../exercises/ch08/8-19.md)、[[8-20]](../../exercises/ch08/8-20.md)
   - 选做：[[8-3]](../../exercises/ch08/8-3.md)、[[8-4]](../../exercises/ch08/8-4.md)、[[8-5]](../../exercises/ch08/8-5.md)、[[8-7]](../../exercises/ch08/8-7.md)、[[8-8]](../../exercises/ch08/8-8.md)、[[8-17]](../../exercises/ch08/8-17.md)、[[8-18]](../../exercises/ch08/8-18.md)
 - 今天是第8章的最后一天：打开 [`exercises/ch08/README.md`](../../exercises/ch08/README.md)，把本章前几天没做完的必做题补上。
-- 洛谷 P3369 用红黑树再过一次；P1429 平面最近点对（kd-树）。
+- OJ 题（在 [problems/README.md](../../problems/README.md) 里打勾；新建题目用 `python3 tools/new.py problem chNN luogu-P1234 题名`，样例测试用 `tools/run.sh`）：
+  - 必做：[洛谷 P1486 [NOI2004] 郁闷的出纳员](https://www.luogu.com.cn/problem/P1486)（提高+/省选−，平衡树）；[洛谷 P1429 平面最近点对（加强版）](https://www.luogu.com.cn/problem/P1429)（提高+/省选−，kd-树或分治）
+  - 挑战（选做）：[洛谷 P6136 【模板】普通平衡树（数据加强版）](https://www.luogu.com.cn/problem/P6136)（省选/NOI−，强制在线）；[洛谷 P4148 简单题](https://www.luogu.com.cn/problem/P4148)（NOI/NOI+/CTSC，kd-树）；[洛谷 P3224 [HNOI2012] 永无乡](https://www.luogu.com.cn/problem/P3224)（省选/NOI−，平衡树启发式合并）
 
 ## 第 6 步：笔记与提交（约 0.5 小时）
 

@@ -67,6 +67,10 @@ tools/test.sh ch01 D01
 - 课后习题（每题一个文件，打开后在“我的解答”下面写；编程题的代码写在同目录的同名 `.cpp` 里）：
   - 必做：[[1-1]](../../exercises/ch01/1-1.md)、[[1-2]](../../exercises/ch01/1-2.md)、[[1-8]](../../exercises/ch01/1-8.md)、[[1-9]](../../exercises/ch01/1-9.md)、[[1-10]](../../exercises/ch01/1-10.md)、[[1-13]](../../exercises/ch01/1-13.md)
   - 选做：[[1-3]](../../exercises/ch01/1-3.md)、[[1-4]](../../exercises/ch01/1-4.md)、[[1-5]](../../exercises/ch01/1-5.md)、[[1-6]](../../exercises/ch01/1-6.md)、[[1-7]](../../exercises/ch01/1-7.md)、[[1-11]](../../exercises/ch01/1-11.md)、[[1-12]](../../exercises/ch01/1-12.md)
+- OJ 题（在 [problems/README.md](../../problems/README.md) 里打勾；新建题目用 `python3 tools/new.py problem chNN luogu-P1234 题名`，样例测试用 `tools/run.sh`）：
+  - 必做：[洛谷 P1226 【模板】快速幂](https://www.luogu.com.cn/problem/P1226)（普及−，反复平方）；[力扣 50. Pow(x, n)](https://leetcode.cn/problems/powx-n/)（中等，快速幂，注意负指数）
+  - 热身（选做）：[力扣 191. 位1的个数](https://leetcode.cn/problems/number-of-1-bits/)（简单，countOnes）
+  - 挑战（选做）：[洛谷 P1045 [NOIP 2003 普及组] 麦森数](https://www.luogu.com.cn/problem/P1045)（普及/提高−，快速幂 + 高精度）
 
 ## 第 7 步：笔记与提交（约 0.5 小时）
 

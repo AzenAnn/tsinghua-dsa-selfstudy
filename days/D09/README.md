@@ -58,7 +58,10 @@ tools/test.sh ch04_stack D09
 - 课后习题（每题一个文件，打开后在“我的解答”下面写；编程题的代码写在同目录的同名 `.cpp` 里）：
   - 必做：[[4-6]](../../exercises/ch04/4-6.md)、[[4-7]](../../exercises/ch04/4-7.md)、[[4-8]](../../exercises/ch04/4-8.md)、[[4-14]](../../exercises/ch04/4-14.md)、[[4-15]](../../exercises/ch04/4-15.md)
   - 选做：[[4-5]](../../exercises/ch04/4-5.md)、[[4-9]](../../exercises/ch04/4-9.md)、[[4-10]](../../exercises/ch04/4-10.md)、[[4-11]](../../exercises/ch04/4-11.md)、[[4-12]](../../exercises/ch04/4-12.md)、[[4-13]](../../exercises/ch04/4-13.md)
-- LeetCode 20、150、224；洛谷 P1449 后缀表达式。
+- OJ 题（在 [problems/README.md](../../problems/README.md) 里打勾；新建题目用 `python3 tools/new.py problem chNN luogu-P1234 题名`，样例测试用 `tools/run.sh`）：
+  - 必做：[洛谷 P1739 表达式括号匹配](https://www.luogu.com.cn/problem/P1739)（入门）；[洛谷 P1981 [NOIP 2013 普及组] 表达式求值](https://www.luogu.com.cn/problem/P1981)（普及−，优先级）；[洛谷 P1175 表达式的转换](https://www.luogu.com.cn/problem/P1175)（普及+/提高，中缀转后缀并逐步计算）；[力扣 224. 基本计算器](https://leetcode.cn/problems/basic-calculator/)（困难，含一元负号）；[洛谷 P5788 【模板】单调栈](https://www.luogu.com.cn/problem/P5788)（普及/提高−）；[力扣 84. 柱状图中最大的矩形](https://leetcode.cn/problems/largest-rectangle-in-histogram/)（困难，单调栈）
+  - 热身（选做）：[力扣 20. 有效的括号](https://leetcode.cn/problems/valid-parentheses/)（简单）；[力扣 150. 逆波兰表达式求值](https://leetcode.cn/problems/evaluate-reverse-polish-notation/)（中等）；[洛谷 P1449 后缀表达式](https://www.luogu.com.cn/problem/P1449)（普及−）
+  - 挑战（选做）：[力扣 85. 最大矩形](https://leetcode.cn/problems/maximal-rectangle/)（困难，单调栈）
 
 ## 第 6 步：笔记与提交（约 0.5 小时）
 
