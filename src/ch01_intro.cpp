@@ -1,4 +1,4 @@
-// 第1章 绪论：函数的实现。声明和说明见 include/dsa/ch01_intro.h
+// 第1章 绪论：函数的实现。声明和说明见 learn/include/dsa/ch01_intro.h
 // 每个函数现在都是 DSA_TODO();，把它换成你的实现。
 
 #include "dsa/ch01_intro.h"
@@ -13,27 +13,50 @@ namespace dsa::ch01 {
 // ---------------- 第 1 天 ----------------
 
 void bubblesort1A(int A[], int n) {
-    DSA_TODO();
+    for(int i = 0;i<n;i++){
+        for(int  j =i+1;j<n;j++){ // 这里是i+1开始
+            if(A[i] > A[j])std::swap(A[i],A[j]);
+        }
+    }
 }
 
 int countOnes(unsigned int n) {
-    DSA_TODO();
+    int cnt =0;
+    while(n){
+        cnt += n &1;
+        n= n >>1;
+    }
+    return cnt;
 }
 
 int countOnes1(unsigned int n) {
-    DSA_TODO();
+    int cnt= 0;
+    while(n){
+        n  &=n-1;
+        cnt++; 
+    }
+    return cnt;
 }
 
 long long power2BF(int n) {
-    DSA_TODO();
+    long long ans =1;
+    for(int i=1;i<=n;i++){
+        ans *=2;
+    }
+    return ans;
 }
 
 long long power2(int n) {
-    DSA_TODO();
+    long long ans = 1LL<<n;
+    return ans;
 }
 
 long long sumI(const int A[], int n) {
-    DSA_TODO();
+    long long ans =0;
+    for(int i=0;i<n;i++){
+        ans +=A[i];
+    }
+    return ans;
 }
 
 // ---------------- 第 2 天 ----------------
